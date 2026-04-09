@@ -1,47 +1,55 @@
 import { test, expect } from '@playwright/test';
 
-test('All Roles Incentive Flow', async ({ page }) => {
+test('test', async ({ page }) => {
+  // Navigate to the application
+  await page.goto('https://dpdlab1.slt.lk:8454/', { timeout: 60000 }); // Extended timeout for page load
+  await page.getByRole('button', { name: 'Microsoft Login to Microsoft' }).click();
 
-  await page.goto('https://dpdlab1.slt.lk:8454/');
-  await page.getByRole('button', { name: /Microsoft Login/i }).click();
-
-  // Wait for login
-  await page.waitForTimeout(15000);
-
+  // Wait for the Reference Data section to load
+  await page.waitForSelector('text=Reference Data', { timeout: 15000 }); // Reduced timeout for faster execution
   await page.getByText('Reference Data').click();
+
+  // Navigate to Commission Distribution - Sales Teams
   await page.getByText('Commission Distribution - Sales Teams').click();
 
-  // 🔥 ALL ROLES DATA (you can expand this)
-  const roles = [
-    { name: 'AM', inc50: '50.00%', inc100: '50.00%', inc101: '0.00%' },
-    { name: 'ENG', inc50: '100.00%', inc100: '200.00%', inc101: '250.00%' },
-    { name: 'DGM', inc50: '300.00%', inc100: '300.00%', inc101: '400.00%' },
-    { name: 'GM', inc50: '109.00%', inc100: '104.00%', inc101: '109.00%' },
-    { name: 'enterprise_business', inc50: '1.00%', inc100: '0.00%', inc101: '3.00%' }
-  ];
+  // Define roles to test with invalid details
+  const roles = ['AM', 'ENG', 'DGM', 'GM', 'Sales ENG', 'enterprise_business'];
 
-  for (const role of roles) {
-
-    // Select role from dropdown
+  // Iterate through each role
+  for (const roleName of roles) {
+    // Select Role from the combobox
+    await page.waitForSelector('[role="combobox"]', { state: 'attached', timeout: 15000 });
     await page.getByRole('combobox').click();
-    await page.getByRole('option', { name: role.name }).click();
+    await page.getByRole('option', { name: roleName, exact: true }).click();
 
-    // Select row
-    await page.getByRole('row', { name: new RegExp(role.name, 'i') })
-      .getByRole('button')
-      .click();
+    // Wait for the table to load
+    await page.waitForSelector('table', { state: 'attached', timeout: 15000 });
 
-    await page.waitForTimeout(2000);
+    // Assuming one row per role for simplicity, find the row and click Edit
+    // Note: Adjust selector if needed based on actual row structure
+    const tableRow = page.locator('table tbody tr').first(); // Assuming the first row is editable
+    await tableRow.scrollIntoViewIfNeeded({ timeout: 30000 });
 
-    // Fill values
-    await page.locator('input[name="incPctg50"]').fill(role.inc50);
-    await page.locator('input[name="incPctg100"]').fill(role.inc100);
-    await page.locator('input[name="incPctg101"]').fill(role.inc101);
+    const isVisible = await tableRow.isVisible();
+    if (!isVisible) {
+      throw new Error(`Row for ${roleName} is not visible.`);
+    }
 
-    // Save
+    // Click the Edit button
+    await tableRow.getByRole('button', { name: 'Edit' }).click();
+
+    // Fill in invalid values (0 and more than 100)
+    await page.locator('input[name="incPctg50"]').fill('0');
+    await page.locator('input[name="incPctg100"]').fill('101');
+    await page.locator('input[name="incPctg101"]').fill('102');
+
+    // Click Save button to attempt saving invalid data (for validation testing)
     await page.getByRole('button', { name: 'Save' }).click();
 
-    await page.waitForTimeout(2000);
-  }
+    // Click Cancel button
+    await page.getByRole('button', { name: 'Cancel' }).click();
 
+    // Wait for the combobox to be ready again before proceeding
+    await page.waitForSelector('[role="combobox"]', { state: 'attached', timeout: 15000 });
+  }
 });
