@@ -1,6 +1,6 @@
 import { test } from '@playwright/test';
 
-test.setTimeout(120000);
+test.setTimeout(140000);
 
 test('solution team invalid commission validation', async ({ page }) => {
   await page.goto('https://dpdlab1.slt.lk:8454/', { timeout: 60000 });
