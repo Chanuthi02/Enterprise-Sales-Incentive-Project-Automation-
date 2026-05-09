@@ -1,0 +1,2755 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\playwright.config.js",
+    "rootDir": "C:/Users/Protech/Desktop/ESIC-testing/tests/specs",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 4
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "C:/Users/Protech/Desktop/ESIC-testing/test-results",
+        "repeatEach": 1,
+        "retries": 1,
+        "metadata": {
+          "actualWorkers": 4
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "C:/Users/Protech/Desktop/ESIC-testing/tests/specs",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 90000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "html",
+        {
+          "outputFolder": "playwright-report"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "junit.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "runAgents": "none",
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.58.2",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "solutionTeamCeiling.spec.js",
+      "file": "solutionTeamCeiling.spec.js",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Solution Team Ceiling Values Page Tests",
+          "file": "solutionTeamCeiling.spec.js",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "TC001 - Page loads successfully",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 82009,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                          "column": 21,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                            "column": 21,
+                            "line": 36
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\u001b[22m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:05:07.097Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-0ecb9-1---Page-loads-successfully-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                        "column": 21,
+                        "line": 36
+                      }
+                    },
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 80537,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Page title: Incentive\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:06:39.411Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-0ecb9-1---Page-loads-successfully-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "eb1885838bef638022e7-40ba328cf22f417e46cf",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 92,
+              "column": 3
+            },
+            {
+              "title": "TC002 - Table has data",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 65172,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:101:22",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 22,
+                          "line": 101
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m     \u001b[36mconst\u001b[39m rowCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetRowCount()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${rowCount} rows in table`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     expect(rowCount)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   test(\u001b[32m'TC003 - Table has correct headers'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 22,
+                            "line": 101
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m  99 |\u001b[39m     \u001b[36mconst\u001b[39m rowCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetRowCount()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${rowCount} rows in table`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     expect(rowCount)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   test(\u001b[32m'TC003 - Table has correct headers'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:101:22\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Found 0 rows in table\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:08:02.520Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 22,
+                        "line": 101
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 54417,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:101:22",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 22,
+                          "line": 101
+                        },
+                        "snippet": "\u001b[0m \u001b[90m  99 |\u001b[39m     \u001b[36mconst\u001b[39m rowCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetRowCount()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${rowCount} rows in table`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     expect(rowCount)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   test(\u001b[32m'TC003 - Table has correct headers'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 22,
+                            "line": 101
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m  99 |\u001b[39m     \u001b[36mconst\u001b[39m rowCount \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetRowCount()\u001b[33m;\u001b[39m\n \u001b[90m 100 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${rowCount} rows in table`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 101 |\u001b[39m     expect(rowCount)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                      \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 102 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 103 |\u001b[39m\n \u001b[90m 104 |\u001b[39m   test(\u001b[32m'TC003 - Table has correct headers'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:101:22\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Found 0 rows in table\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:09:14.921Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 22,
+                        "line": 101
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-09ff5d0de5299f33bb97",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 98,
+              "column": 3
+            },
+            {
+              "title": "TC003 - Table has correct headers",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 70892,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:107:28",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 28,
+                          "line": 107
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[36mconst\u001b[39m headers \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetTableHeaders()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Table headers:'\u001b[39m\u001b[33m,\u001b[39m headers)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     expect(headers\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[90m// ========== EDIT BUTTON TESTS ==========\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 28,
+                            "line": 107
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[36mconst\u001b[39m headers \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetTableHeaders()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Table headers:'\u001b[39m\u001b[33m,\u001b[39m headers)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     expect(headers\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[90m// ========== EDIT BUTTON TESTS ==========\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:107:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Table headers: []\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:10:19.428Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 28,
+                        "line": 107
+                      }
+                    },
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 46205,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:107:28",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 28,
+                          "line": 107
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[36mconst\u001b[39m headers \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetTableHeaders()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Table headers:'\u001b[39m\u001b[33m,\u001b[39m headers)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     expect(headers\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[90m// ========== EDIT BUTTON TESTS ==========\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 28,
+                            "line": 107
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 105 |\u001b[39m     \u001b[36mconst\u001b[39m headers \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mgetTableHeaders()\u001b[33m;\u001b[39m\n \u001b[90m 106 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Table headers:'\u001b[39m\u001b[33m,\u001b[39m headers)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 107 |\u001b[39m     expect(headers\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 108 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 109 |\u001b[39m\n \u001b[90m 110 |\u001b[39m   \u001b[90m// ========== EDIT BUTTON TESTS ==========\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:107:28\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Table headers: []\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:11:38.195Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 28,
+                        "line": 107
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-dab6ae05fb3b7926314b",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 104,
+              "column": 3
+            },
+            {
+              "title": "TC004 - Edit buttons are visible",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 13,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 47073,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:118:32",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 32,
+                          "line": 118
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 116 |\u001b[39m     \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 117 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 |\u001b[39m     expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 119 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m   test(\u001b[32m'TC005 - Clicking edit button opens dialog'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 32,
+                            "line": 118
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 116 |\u001b[39m     \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 117 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 |\u001b[39m     expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 119 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m   test(\u001b[32m'TC005 - Clicking edit button opens dialog'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:118:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Checking edit buttons for 0 rows\n"
+                        },
+                        {
+                          "text": "Found 0 edit buttons\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:12:35.458Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 32,
+                        "line": 118
+                      }
+                    },
+                    {
+                      "workerIndex": 15,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 33508,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:118:32",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 32,
+                          "line": 118
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 116 |\u001b[39m     \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 117 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 |\u001b[39m     expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 119 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m   test(\u001b[32m'TC005 - Clicking edit button opens dialog'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 32,
+                            "line": 118
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 116 |\u001b[39m     \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 117 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 118 |\u001b[39m     expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 119 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m   test(\u001b[32m'TC005 - Clicking edit button opens dialog'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:118:32\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Checking edit buttons for 0 rows\n"
+                        },
+                        {
+                          "text": "Found 0 edit buttons\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:13:28.984Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 32,
+                        "line": 118
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-1ef880f6aeed2d739185",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 112,
+              "column": 3
+            },
+            {
+              "title": "TC005 - Clicking edit button opens dialog",
+              "ok": false,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 17,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 24442,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:125:27",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 27,
+                          "line": 125
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 123 |\u001b[39m     \u001b[36mconst\u001b[39m dialogVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditDialog\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Dialog visible: ${dialogVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m     expect(dialogVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m     \n \u001b[90m 127 |\u001b[39m     \u001b[90m// Close dialog\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mcancelDialog()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 27,
+                            "line": 125
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 123 |\u001b[39m     \u001b[36mconst\u001b[39m dialogVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditDialog\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Dialog visible: ${dialogVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m     expect(dialogVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m     \n \u001b[90m 127 |\u001b[39m     \u001b[90m// Close dialog\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mcancelDialog()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:125:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Clicking edit button for row 0...\n"
+                        },
+                        {
+                          "text": "❌ Edit button not found\n"
+                        },
+                        {
+                          "text": "Dialog visible: false\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:14:10.319Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 27,
+                        "line": 125
+                      }
+                    },
+                    {
+                      "workerIndex": 19,
+                      "parallelIndex": 1,
+                      "status": "failed",
+                      "duration": 20941,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:125:27",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                          "column": 27,
+                          "line": 125
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 123 |\u001b[39m     \u001b[36mconst\u001b[39m dialogVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditDialog\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Dialog visible: ${dialogVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m     expect(dialogVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m     \n \u001b[90m 127 |\u001b[39m     \u001b[90m// Close dialog\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mcancelDialog()\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 27,
+                            "line": 125
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 123 |\u001b[39m     \u001b[36mconst\u001b[39m dialogVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditDialog\u001b[33m.\u001b[39misVisible()\u001b[33m;\u001b[39m\n \u001b[90m 124 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m`Dialog visible: ${dialogVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 125 |\u001b[39m     expect(dialogVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 126 |\u001b[39m     \n \u001b[90m 127 |\u001b[39m     \u001b[90m// Close dialog\u001b[39m\n \u001b[90m 128 |\u001b[39m     \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39mcancelDialog()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:125:27\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Clicking edit button for row 0...\n"
+                        },
+                        {
+                          "text": "❌ Edit button not found\n"
+                        },
+                        {
+                          "text": "Dialog visible: false\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:14:43.357Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\\test-failed-1.png"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\\error-context.md"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\\trace.zip"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                        "column": 27,
+                        "line": 125
+                      }
+                    }
+                  ],
+                  "status": "unexpected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-db4f631f63e42e1ef489",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 121,
+              "column": 3
+            },
+            {
+              "title": "TC006 - Can update ceiling value",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 25027,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:15:15.509Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-cebaa05a53752fc65229",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 133,
+              "column": 3
+            },
+            {
+              "title": "TC007 - Can cancel edit without saving",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 35453,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:15:41.960Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-446db7d1b51e5e327b05",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 150,
+              "column": 3
+            },
+            {
+              "title": "TC008a - Can enter 10.00% value",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 21,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 17588,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:16:17.509Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-d3176aae9037ae2e3955",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 168,
+              "column": 3
+            },
+            {
+              "title": "TC008b - Can enter 12.50% value",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "failed",
+                      "duration": 82406,
+                      "error": {
+                        "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                        "stack": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23",
+                        "location": {
+                          "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                          "column": 21,
+                          "line": 36
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                            "column": 21,
+                            "line": 36
+                          },
+                          "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\u001b[22m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Disconnected from database\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:05:06.862Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-1d2b9-08b---Can-enter-12-50-value-chromium\\video.webm"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                        "column": 21,
+                        "line": 36
+                      }
+                    },
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 83870,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "✅ Connected to PostgreSQL database\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-05-09T14:06:39.588Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-1d2b9-08b---Can-enter-12-50-value-chromium-retry1\\trace.zip"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "flaky"
+                }
+              ],
+              "id": "eb1885838bef638022e7-9d90b206cfe43797b214",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 181,
+              "column": 3
+            },
+            {
+              "title": "TC008c - Can enter 15.00% value",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 61690,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:08:05.807Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-8723bb7ba734d6bcea64",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 194,
+              "column": 3
+            },
+            {
+              "title": "TC008d - Can enter 20.00% value",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 59572,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:09:07.586Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-e8ca55b7bd4cdebe3067",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 207,
+              "column": 3
+            },
+            {
+              "title": "TC009 - Edit mode can be toggled",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 25388,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:10:07.230Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-615d7eab04ec66812919",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 222,
+              "column": 3
+            },
+            {
+              "title": "TC010 - Can edit multiple solutions",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 56958,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:10:32.683Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-5b57e403b02d70fb1eb3",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 244,
+              "column": 3
+            },
+            {
+              "title": "TC011 - Page loads quickly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 26035,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "Page load time: 2426ms\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:11:29.731Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-cadfe2b9832e495171c4",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 278,
+              "column": 3
+            },
+            {
+              "title": "TC012 - Edit operation completes quickly",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 36372,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Navigating to Solution Team Ceiling Values page...\n"
+                        },
+                        {
+                          "text": "✅ Page loaded\n"
+                        },
+                        {
+                          "text": "No data - skipping\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-05-09T14:11:55.843Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "eb1885838bef638022e7-bafe6d23d08a7e074416",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 286,
+              "column": 3
+            }
+          ],
+          "suites": [
+            {
+              "title": "UI and Layout Tests",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 28,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC017 - Page loads successfully",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 83308,
+                          "error": {
+                            "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                            "stack": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                              "column": 21,
+                              "line": 36
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                                "column": 21,
+                                "line": 36
+                              },
+                              "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\u001b[22m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:05:06.739Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-60711-7---Page-loads-successfully-chromium\\video.webm"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                            "column": 21,
+                            "line": 36
+                          }
+                        },
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 75136,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Page title: Incentive\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:06:39.845Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-60711-7---Page-loads-successfully-chromium-retry1\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "flaky"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-6500b0e325e25818b6cb",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 30,
+                  "column": 5
+                },
+                {
+                  "title": "TC018 - Header is visible and properly displayed",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 50985,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Header visible: true\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:08:00.386Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-2013cf39427ef12a1adb",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 36,
+                  "column": 5
+                },
+                {
+                  "title": "TC019 - Logo is visible in header/footer",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 27460,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Logo visible: true\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:08:51.442Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-232cde9c1036f68767fe",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 43,
+                  "column": 5
+                },
+                {
+                  "title": "TC020 - Footer is visible",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 7,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 52764,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:54:31",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 31,
+                              "line": 54
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 52 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footer\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer visible: ${isFooterVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect(isFooterVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m     test(\u001b[32m'TC021 - Footer logo is clearly visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 31,
+                                "line": 54
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 52 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footer\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer visible: ${isFooterVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect(isFooterVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m     test(\u001b[32m'TC021 - Footer logo is clearly visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:54:31\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:09:18.996Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 31,
+                            "line": 54
+                          }
+                        },
+                        {
+                          "workerIndex": 9,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 71393,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:54:31",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 31,
+                              "line": 54
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 52 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footer\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer visible: ${isFooterVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect(isFooterVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m     test(\u001b[32m'TC021 - Footer logo is clearly visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 31,
+                                "line": 54
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 52 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footer\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 53 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer visible: ${isFooterVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 54 |\u001b[39m       expect(isFooterVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                               \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 55 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 56 |\u001b[39m\n \u001b[90m 57 |\u001b[39m     test(\u001b[32m'TC021 - Footer logo is clearly visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:54:31\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:10:19.088Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 31,
+                            "line": 54
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-cc581d54aa968f463ae5",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 50,
+                  "column": 5
+                },
+                {
+                  "title": "TC021 - Footer logo is clearly visible",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 12,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 51089,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:61:35",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 35,
+                              "line": 61
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 59 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterLogoVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footerLogo\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer logo visible: ${isFooterLogoVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m       expect(isFooterLogoVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     test(\u001b[32m'TC022 - Footer contains copyright information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 35,
+                                "line": 61
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 59 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterLogoVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footerLogo\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer logo visible: ${isFooterLogoVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m       expect(isFooterLogoVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     test(\u001b[32m'TC022 - Footer contains copyright information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:61:35\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer logo visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:11:38.726Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 35,
+                            "line": 61
+                          }
+                        },
+                        {
+                          "workerIndex": 14,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 43905,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:61:35",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 35,
+                              "line": 61
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 59 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterLogoVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footerLogo\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer logo visible: ${isFooterLogoVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m       expect(isFooterLogoVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     test(\u001b[32m'TC022 - Footer contains copyright information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 35,
+                                "line": 61
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 59 |\u001b[39m       \u001b[36mconst\u001b[39m isFooterLogoVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m footerLogo\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 60 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer logo visible: ${isFooterLogoVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 61 |\u001b[39m       expect(isFooterLogoVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 62 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 63 |\u001b[39m\n \u001b[90m 64 |\u001b[39m     test(\u001b[32m'TC022 - Footer contains copyright information'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:61:35\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer logo visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:12:38.488Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 35,
+                            "line": 61
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-4bf75929f7e79c04e332",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 57,
+                  "column": 5
+                },
+                {
+                  "title": "TC022 - Footer contains copyright information",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 16,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 43055,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:68:26",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 26,
+                              "line": 68
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 66 |\u001b[39m       \u001b[36mconst\u001b[39m footerText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m copyrightText\u001b[33m.\u001b[39mtextContent()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer text: ${footerText}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m       expect(footerText)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m\n \u001b[90m 71 |\u001b[39m     test(\u001b[32m'TC023 - Page heading is visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 26,
+                                "line": 68
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 66 |\u001b[39m       \u001b[36mconst\u001b[39m footerText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m copyrightText\u001b[33m.\u001b[39mtextContent()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer text: ${footerText}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m       expect(footerText)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m\n \u001b[90m 71 |\u001b[39m     test(\u001b[32m'TC023 - Page heading is visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:68:26\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer text: null\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:13:29.374Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 26,
+                            "line": 68
+                          }
+                        },
+                        {
+                          "workerIndex": 18,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 34156,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:68:26",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 26,
+                              "line": 68
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 66 |\u001b[39m       \u001b[36mconst\u001b[39m footerText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m copyrightText\u001b[33m.\u001b[39mtextContent()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer text: ${footerText}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m       expect(footerText)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m\n \u001b[90m 71 |\u001b[39m     test(\u001b[32m'TC023 - Page heading is visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 26,
+                                "line": 68
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mnull\u001b[39m\n\n\u001b[0m \u001b[90m 66 |\u001b[39m       \u001b[36mconst\u001b[39m footerText \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m copyrightText\u001b[33m.\u001b[39mtextContent()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mnull\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 67 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Footer text: ${footerText}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 68 |\u001b[39m       expect(footerText)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                          \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 69 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 70 |\u001b[39m\n \u001b[90m 71 |\u001b[39m     test(\u001b[32m'TC023 - Page heading is visible'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:68:26\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Footer text: null\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:14:21.040Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 26,
+                            "line": 68
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-4b4933d1f23a5087d12e",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 64,
+                  "column": 5
+                },
+                {
+                  "title": "TC023 - Page heading is visible",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 20,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 25349,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:75:32",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 32,
+                              "line": 75
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 73 |\u001b[39m       \u001b[36mconst\u001b[39m isHeadingVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heading\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 74 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Heading visible: ${isHeadingVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m       expect(isHeadingVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     test(\u001b[32m'TC024 - Edit buttons are visible and enabled'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 32,
+                                "line": 75
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 73 |\u001b[39m       \u001b[36mconst\u001b[39m isHeadingVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heading\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 74 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Heading visible: ${isHeadingVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m       expect(isHeadingVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     test(\u001b[32m'TC024 - Edit buttons are visible and enabled'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:75:32\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Heading visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:15:04.622Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 32,
+                            "line": 75
+                          }
+                        },
+                        {
+                          "workerIndex": 22,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 33353,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:75:32",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 32,
+                              "line": 75
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 73 |\u001b[39m       \u001b[36mconst\u001b[39m isHeadingVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heading\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 74 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Heading visible: ${isHeadingVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m       expect(isHeadingVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     test(\u001b[32m'TC024 - Edit buttons are visible and enabled'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 32,
+                                "line": 75
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeTruthy\u001b[2m()\u001b[22m\n\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 73 |\u001b[39m       \u001b[36mconst\u001b[39m isHeadingVisible \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m heading\u001b[33m.\u001b[39mfirst()\u001b[33m.\u001b[39misVisible()\u001b[33m.\u001b[39m\u001b[36mcatch\u001b[39m(() \u001b[33m=>\u001b[39m \u001b[36mfalse\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 74 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Heading visible: ${isHeadingVisible}`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 75 |\u001b[39m       expect(isHeadingVisible)\u001b[33m.\u001b[39mtoBeTruthy()\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 76 |\u001b[39m     })\u001b[33m;\u001b[39m\n \u001b[90m 77 |\u001b[39m\n \u001b[90m 78 |\u001b[39m     test(\u001b[32m'TC024 - Edit buttons are visible and enabled'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:75:32\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Heading visible: false\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:15:41.103Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 32,
+                            "line": 75
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-edab30a6ef9c6ddfb8e4",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 71,
+                  "column": 5
+                },
+                {
+                  "title": "TC024 - Edit buttons are visible and enabled",
+                  "ok": false,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 23,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 19783,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:81:34",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 34,
+                              "line": 81
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 79 |\u001b[39m       \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m       expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m button \u001b[36mof\u001b[39m editButtons\u001b[33m.\u001b[39mslice(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m3\u001b[39m)) {\n \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m expect(button)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 34,
+                                "line": 81
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 79 |\u001b[39m       \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m       expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m button \u001b[36mof\u001b[39m editButtons\u001b[33m.\u001b[39mslice(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m3\u001b[39m)) {\n \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m expect(button)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:81:34\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Found 0 edit buttons\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:16:41.902Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\\error-context.md"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 34,
+                            "line": 81
+                          }
+                        },
+                        {
+                          "workerIndex": 24,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 19708,
+                          "error": {
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:81:34",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                              "column": 34,
+                              "line": 81
+                            },
+                            "snippet": "\u001b[0m \u001b[90m 79 |\u001b[39m       \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m       expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m button \u001b[36mof\u001b[39m editButtons\u001b[33m.\u001b[39mslice(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m3\u001b[39m)) {\n \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m expect(button)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                                "column": 34,
+                                "line": 81
+                              },
+                              "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeGreaterThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: > \u001b[32m0\u001b[39m\nReceived:   \u001b[31m0\u001b[39m\n\n\u001b[0m \u001b[90m 79 |\u001b[39m       \u001b[36mconst\u001b[39m editButtons \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m ceilingPage\u001b[33m.\u001b[39meditButtons\u001b[33m.\u001b[39mall()\u001b[33m;\u001b[39m\n \u001b[90m 80 |\u001b[39m       console\u001b[33m.\u001b[39mlog(\u001b[32m`Found ${editButtons.length} edit buttons`\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 81 |\u001b[39m       expect(editButtons\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBeGreaterThan(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 82 |\u001b[39m\n \u001b[90m 83 |\u001b[39m       \u001b[36mfor\u001b[39m (\u001b[36mconst\u001b[39m button \u001b[36mof\u001b[39m editButtons\u001b[33m.\u001b[39mslice(\u001b[35m0\u001b[39m\u001b[33m,\u001b[39m \u001b[35m3\u001b[39m)) {\n \u001b[90m 84 |\u001b[39m         \u001b[36mawait\u001b[39m expect(button)\u001b[33m.\u001b[39mtoBeVisible()\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:81:34\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "Found 0 edit buttons\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:17:08.493Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\\test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\\video.webm"
+                            },
+                            {
+                              "name": "error-context",
+                              "contentType": "text/markdown",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\\error-context.md"
+                            },
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\\trace.zip"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js",
+                            "column": 34,
+                            "line": 81
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-4d3faf3d2d1afd92051a",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 78,
+                  "column": 5
+                }
+              ]
+            },
+            {
+              "title": "Database Validation Tests",
+              "file": "solutionTeamCeiling.spec.js",
+              "line": 306,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "TC013 - Initial ceiling values in UI match database",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 6,
+                          "parallelIndex": 2,
+                          "status": "passed",
+                          "duration": 42654,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "No ceiling data available - skipping\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:12:32.306Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-f007db08ee577ae82e60",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 308,
+                  "column": 5
+                },
+                {
+                  "title": "TC014 - All solutions in UI exist in database",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 3,
+                          "parallelIndex": 3,
+                          "status": "failed",
+                          "duration": 81973,
+                          "error": {
+                            "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n",
+                            "stack": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\n    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23",
+                            "location": {
+                              "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                              "column": 21,
+                              "line": 36
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                                "column": 21,
+                                "line": 36
+                              },
+                              "message": "TimeoutError: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://dpdlab1.slt.lk:8454/solution-team-ceiling-values\", waiting until \"domcontentloaded\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\pages\\solutionTeamCeilingPage.js:36\n\n\u001b[0m \u001b[90m 34 |\u001b[39m   \u001b[36masync\u001b[39m goto() {\n \u001b[90m 35 |\u001b[39m     console\u001b[33m.\u001b[39mlog(\u001b[32m'Navigating to Solution Team Ceiling Values page...'\u001b[39m)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 36 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'https://dpdlab1.slt.lk:8454/solution-team-ceiling-values'\u001b[39m\u001b[33m,\u001b[39m {\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 37 |\u001b[39m       waitUntil\u001b[33m:\u001b[39m \u001b[32m'domcontentloaded'\u001b[39m\u001b[33m,\u001b[39m\n \u001b[90m 38 |\u001b[39m       timeout\u001b[33m:\u001b[39m parseInt(process\u001b[33m.\u001b[39menv\u001b[33m.\u001b[39m\u001b[33mPLAYWRIGHT_TIMEOUT\u001b[39m \u001b[33m||\u001b[39m \u001b[32m'60000'\u001b[39m\u001b[33m,\u001b[39m \u001b[35m10\u001b[39m)\n \u001b[90m 39 |\u001b[39m     })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at SolutionTeamCeilingPage.goto (C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js:36:21)\u001b[22m\n\u001b[2m    at C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\specs\\solutionTeamCeiling.spec.js:18:23\u001b[22m"
+                            }
+                          ],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:05:06.958Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-159b5-ons-in-UI-exist-in-database-chromium\\video.webm"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\tests\\pages\\solutionTeamCeilingPage.js",
+                            "column": 21,
+                            "line": 36
+                          }
+                        },
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 80773,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "✅ Connected to PostgreSQL database\n"
+                            },
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "No ceiling data available - skipping\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 1,
+                          "startTime": "2026-05-09T14:06:39.507Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "trace",
+                              "contentType": "application/zip",
+                              "path": "C:\\Users\\Protech\\Desktop\\ESIC-testing\\test-results\\solutionTeamCeiling-Soluti-159b5-ons-in-UI-exist-in-database-chromium-retry1\\trace.zip"
+                            }
+                          ]
+                        }
+                      ],
+                      "status": "flaky"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-fe772fd832c548fb6097",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 340,
+                  "column": 5
+                },
+                {
+                  "title": "TC015 - Ceiling data persists after page reload",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 61210,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "No ceiling data available - skipping\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:08:03.310Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-d73a730f61f70a9f0efa",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 367,
+                  "column": 5
+                },
+                {
+                  "title": "TC016 - Edit and verify ceiling value persists in database",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 51857,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "No data - skipping\n"
+                            }
+                          ],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:09:04.693Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-50d2deec0789ea46e34c",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 394,
+                  "column": 5
+                },
+                {
+                  "title": "TC025 - Fails when DB has data but UI shows no rows",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 26255,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            }
+                          ],
+                          "stderr": [
+                            {
+                              "text": "Error getting solution team ceilings: relation \"solution_team_ceilings\" does not exist\n"
+                            }
+                          ],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:09:56.636Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-714b05f94187b2d48bbd",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 423,
+                  "column": 5
+                },
+                {
+                  "title": "TC026 - UI empty state is valid only when DB is empty",
+                  "ok": true,
+                  "tags": [],
+                  "tests": [
+                    {
+                      "timeout": 90000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 4,
+                          "parallelIndex": 3,
+                          "status": "passed",
+                          "duration": 62563,
+                          "errors": [],
+                          "stdout": [
+                            {
+                              "text": "Navigating to Solution Team Ceiling Values page...\n"
+                            },
+                            {
+                              "text": "✅ Page loaded\n"
+                            },
+                            {
+                              "text": "✅ Disconnected from database\n"
+                            }
+                          ],
+                          "stderr": [
+                            {
+                              "text": "Error getting solution team ceilings: relation \"solution_team_ceilings\" does not exist\n"
+                            }
+                          ],
+                          "retry": 0,
+                          "startTime": "2026-05-09T14:10:22.980Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "eb1885838bef638022e7-022de798b3d9a825cc47",
+                  "file": "solutionTeamCeiling.spec.js",
+                  "line": 432,
+                  "column": 5
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-05-09T14:05:00.668Z",
+    "duration": 752418.574,
+    "expected": 16,
+    "skipped": 0,
+    "unexpected": 9,
+    "flaky": 4
+  }
+}

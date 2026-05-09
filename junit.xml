@@ -1,0 +1,1021 @@
+<testsuites id="" name="" tests="29" failures="9" skipped="0" errors="0" time="752.418574">
+<testsuite name="solutionTeamCeiling.spec.js" timestamp="2026-05-09T14:05:00.864Z" hostname="chromium" tests="29" failures="9" skipped="0" time="2074.284" errors="0">
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC017 - Page loads successfully" classname="solutionTeamCeiling.spec.js" time="158.444">
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-60711-7---Page-loads-successfully-chromium\video.webm]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Page title: Incentive
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-60711-7---Page-loads-successfully-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC018 - Header is visible and properly displayed" classname="solutionTeamCeiling.spec.js" time="50.985">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Header visible: true
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC019 - Logo is visible in header/footer" classname="solutionTeamCeiling.spec.js" time="27.46">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Logo visible: true
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC020 - Footer is visible" classname="solutionTeamCeiling.spec.js" time="124.157">
+<failure message="solutionTeamCeiling.spec.js:50:5 TC020 - Footer is visible" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:50:5 › Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC020 - Footer is visible 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      52 |       const isFooterVisible = await footer.isVisible().catch(() => false);
+      53 |       console.log(`Footer visible: ${isFooterVisible}`);
+    > 54 |       expect(isFooterVisible).toBeTruthy();
+         |                               ^
+      55 |     });
+      56 |
+      57 |     test('TC021 - Footer logo is clearly visible', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:54:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      52 |       const isFooterVisible = await footer.isVisible().catch(() => false);
+      53 |       console.log(`Footer visible: ${isFooterVisible}`);
+    > 54 |       expect(isFooterVisible).toBeTruthy();
+         |                               ^
+      55 |     });
+      56 |
+      57 |     test('TC021 - Footer logo is clearly visible', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:54:31
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-7989d-s-TC020---Footer-is-visible-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC021 - Footer logo is clearly visible" classname="solutionTeamCeiling.spec.js" time="94.994">
+<failure message="solutionTeamCeiling.spec.js:57:5 TC021 - Footer logo is clearly visible" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:57:5 › Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC021 - Footer logo is clearly visible 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      59 |       const isFooterLogoVisible = await footerLogo.isVisible().catch(() => false);
+      60 |       console.log(`Footer logo visible: ${isFooterLogoVisible}`);
+    > 61 |       expect(isFooterLogoVisible).toBeTruthy();
+         |                                   ^
+      62 |     });
+      63 |
+      64 |     test('TC022 - Footer contains copyright information', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:61:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      59 |       const isFooterLogoVisible = await footerLogo.isVisible().catch(() => false);
+      60 |       console.log(`Footer logo visible: ${isFooterLogoVisible}`);
+    > 61 |       expect(isFooterLogoVisible).toBeTruthy();
+         |                                   ^
+      62 |     });
+      63 |
+      64 |     test('TC022 - Footer contains copyright information', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:61:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer logo visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer logo visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-ced4f-ter-logo-is-clearly-visible-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC022 - Footer contains copyright information" classname="solutionTeamCeiling.spec.js" time="77.211">
+<failure message="solutionTeamCeiling.spec.js:64:5 TC022 - Footer contains copyright information" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:64:5 › Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC022 - Footer contains copyright information 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      66 |       const footerText = await copyrightText.textContent().catch(() => null);
+      67 |       console.log(`Footer text: ${footerText}`);
+    > 68 |       expect(footerText).toBeTruthy();
+         |                          ^
+      69 |     });
+      70 |
+      71 |     test('TC023 - Page heading is visible', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:68:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: null
+
+      66 |       const footerText = await copyrightText.textContent().catch(() => null);
+      67 |       console.log(`Footer text: ${footerText}`);
+    > 68 |       expect(footerText).toBeTruthy();
+         |                          ^
+      69 |     });
+      70 |
+      71 |     test('TC023 - Page heading is visible', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:68:26
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer text: null
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Footer text: null
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b27e0-tains-copyright-information-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC023 - Page heading is visible" classname="solutionTeamCeiling.spec.js" time="58.702">
+<failure message="solutionTeamCeiling.spec.js:71:5 TC023 - Page heading is visible" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:71:5 › Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC023 - Page heading is visible 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      73 |       const isHeadingVisible = await heading.first().isVisible().catch(() => false);
+      74 |       console.log(`Heading visible: ${isHeadingVisible}`);
+    > 75 |       expect(isHeadingVisible).toBeTruthy();
+         |                                ^
+      76 |     });
+      77 |
+      78 |     test('TC024 - Edit buttons are visible and enabled', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:75:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      73 |       const isHeadingVisible = await heading.first().isVisible().catch(() => false);
+      74 |       console.log(`Heading visible: ${isHeadingVisible}`);
+    > 75 |       expect(isHeadingVisible).toBeTruthy();
+         |                                ^
+      76 |     });
+      77 |
+      78 |     test('TC024 - Edit buttons are visible and enabled', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:75:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Heading visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Heading visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a4106-3---Page-heading-is-visible-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC024 - Edit buttons are visible and enabled" classname="solutionTeamCeiling.spec.js" time="39.491">
+<failure message="solutionTeamCeiling.spec.js:78:5 TC024 - Edit buttons are visible and enabled" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:78:5 › Solution Team Ceiling Values Page Tests › UI and Layout Tests › TC024 - Edit buttons are visible and enabled 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      79 |       const editButtons = await ceilingPage.editButtons.all();
+      80 |       console.log(`Found ${editButtons.length} edit buttons`);
+    > 81 |       expect(editButtons.length).toBeGreaterThan(0);
+         |                                  ^
+      82 |
+      83 |       for (const button of editButtons.slice(0, 3)) {
+      84 |         await expect(button).toBeVisible();
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:81:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      79 |       const editButtons = await ceilingPage.editButtons.all();
+      80 |       console.log(`Found ${editButtons.length} edit buttons`);
+    > 81 |       expect(editButtons.length).toBeGreaterThan(0);
+         |                                  ^
+      82 |
+      83 |       for (const button of editButtons.slice(0, 3)) {
+      84 |         await expect(button).toBeVisible();
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:81:34
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Found 0 edit buttons
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Found 0 edit buttons
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-a51bc-ons-are-visible-and-enabled-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC001 - Page loads successfully" classname="solutionTeamCeiling.spec.js" time="162.546">
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-0ecb9-1---Page-loads-successfully-chromium\video.webm]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Page title: Incentive
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-0ecb9-1---Page-loads-successfully-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC002 - Table has data" classname="solutionTeamCeiling.spec.js" time="119.589">
+<failure message="solutionTeamCeiling.spec.js:98:3 TC002 - Table has data" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:98:3 › Solution Team Ceiling Values Page Tests › TC002 - Table has data 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+       99 |     const rowCount = await ceilingPage.getRowCount();
+      100 |     console.log(`Found ${rowCount} rows in table`);
+    > 101 |     expect(rowCount).toBeGreaterThan(0);
+          |                      ^
+      102 |   });
+      103 |
+      104 |   test('TC003 - Table has correct headers', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:101:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+       99 |     const rowCount = await ceilingPage.getRowCount();
+      100 |     console.log(`Found ${rowCount} rows in table`);
+    > 101 |     expect(rowCount).toBeGreaterThan(0);
+          |                      ^
+      102 |   });
+      103 |
+      104 |   test('TC003 - Table has correct headers', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:101:22
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Found 0 rows in table
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Found 0 rows in table
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-21f51-ests-TC002---Table-has-data-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC003 - Table has correct headers" classname="solutionTeamCeiling.spec.js" time="117.097">
+<failure message="solutionTeamCeiling.spec.js:104:3 TC003 - Table has correct headers" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:104:3 › Solution Team Ceiling Values Page Tests › TC003 - Table has correct headers 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      105 |     const headers = await ceilingPage.getTableHeaders();
+      106 |     console.log('Table headers:', headers);
+    > 107 |     expect(headers.length).toBeGreaterThan(0);
+          |                            ^
+      108 |   });
+      109 |
+      110 |   // ========== EDIT BUTTON TESTS ==========
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:107:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      105 |     const headers = await ceilingPage.getTableHeaders();
+      106 |     console.log('Table headers:', headers);
+    > 107 |     expect(headers.length).toBeGreaterThan(0);
+          |                            ^
+      108 |   });
+      109 |
+      110 |   // ========== EDIT BUTTON TESTS ==========
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:107:28
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Table headers: []
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Table headers: []
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-b983e---Table-has-correct-headers-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC004 - Edit buttons are visible" classname="solutionTeamCeiling.spec.js" time="80.581">
+<failure message="solutionTeamCeiling.spec.js:112:3 TC004 - Edit buttons are visible" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:112:3 › Solution Team Ceiling Values Page Tests › TC004 - Edit buttons are visible 
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      116 |     const editButtons = await ceilingPage.editButtons.all();
+      117 |     console.log(`Found ${editButtons.length} edit buttons`);
+    > 118 |     expect(editButtons.length).toBeGreaterThan(0);
+          |                                ^
+      119 |   });
+      120 |
+      121 |   test('TC005 - Clicking edit button opens dialog', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:118:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeGreaterThan(expected)
+
+    Expected: > 0
+    Received:   0
+
+      116 |     const editButtons = await ceilingPage.editButtons.all();
+      117 |     console.log(`Found ${editButtons.length} edit buttons`);
+    > 118 |     expect(editButtons.length).toBeGreaterThan(0);
+          |                                ^
+      119 |   });
+      120 |
+      121 |   test('TC005 - Clicking edit button opens dialog', async () => {
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:118:32
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Checking edit buttons for 0 rows
+Found 0 edit buttons
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Checking edit buttons for 0 rows
+Found 0 edit buttons
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-f5e55----Edit-buttons-are-visible-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC005 - Clicking edit button opens dialog" classname="solutionTeamCeiling.spec.js" time="45.383">
+<failure message="solutionTeamCeiling.spec.js:121:3 TC005 - Clicking edit button opens dialog" type="FAILURE">
+<![CDATA[  [chromium] › solutionTeamCeiling.spec.js:121:3 › Solution Team Ceiling Values Page Tests › TC005 - Clicking edit button opens dialog 
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      123 |     const dialogVisible = await ceilingPage.editDialog.isVisible();
+      124 |     console.log(`Dialog visible: ${dialogVisible}`);
+    > 125 |     expect(dialogVisible).toBeTruthy();
+          |                           ^
+      126 |     
+      127 |     // Close dialog
+      128 |     await ceilingPage.cancelDialog();
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:125:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Error: expect(received).toBeTruthy()
+
+    Received: false
+
+      123 |     const dialogVisible = await ceilingPage.editDialog.isVisible();
+      124 |     console.log(`Dialog visible: ${dialogVisible}`);
+    > 125 |     expect(dialogVisible).toBeTruthy();
+          |                           ^
+      126 |     
+      127 |     // Close dialog
+      128 |     await ceilingPage.cancelDialog();
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\solutionTeamCeiling.spec.js:125:27
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Clicking edit button for row 0...
+❌ Edit button not found
+Dialog visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Clicking edit button for row 0...
+❌ Edit button not found
+Dialog visible: false
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-df015-ng-edit-button-opens-dialog-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC006 - Can update ceiling value" classname="solutionTeamCeiling.spec.js" time="25.027">
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC007 - Can cancel edit without saving" classname="solutionTeamCeiling.spec.js" time="35.453">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC008a - Can enter 10.00% value" classname="solutionTeamCeiling.spec.js" time="17.588">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+✅ Disconnected from database
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC008b - Can enter 12.50% value" classname="solutionTeamCeiling.spec.js" time="166.276">
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-1d2b9-08b---Can-enter-12-50-value-chromium\video.webm]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-1d2b9-08b---Can-enter-12-50-value-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC008c - Can enter 15.00% value" classname="solutionTeamCeiling.spec.js" time="61.69">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC008d - Can enter 20.00% value" classname="solutionTeamCeiling.spec.js" time="59.572">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC009 - Edit mode can be toggled" classname="solutionTeamCeiling.spec.js" time="25.388">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC010 - Can edit multiple solutions" classname="solutionTeamCeiling.spec.js" time="56.958">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC011 - Page loads quickly" classname="solutionTeamCeiling.spec.js" time="26.035">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+Page load time: 2426ms
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › TC012 - Edit operation completes quickly" classname="solutionTeamCeiling.spec.js" time="36.372">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC013 - Initial ceiling values in UI match database" classname="solutionTeamCeiling.spec.js" time="42.654">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No ceiling data available - skipping
+✅ Disconnected from database
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC014 - All solutions in UI exist in database" classname="solutionTeamCeiling.spec.js" time="162.746">
+<system-out>
+<![CDATA[✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-159b5-ons-in-UI-exist-in-database-chromium\video.webm]]
+✅ Connected to PostgreSQL database
+Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No ceiling data available - skipping
+
+[[ATTACHMENT|test-results\solutionTeamCeiling-Soluti-159b5-ons-in-UI-exist-in-database-chromium-retry1\trace.zip]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC015 - Ceiling data persists after page reload" classname="solutionTeamCeiling.spec.js" time="61.21">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No ceiling data available - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC016 - Edit and verify ceiling value persists in database" classname="solutionTeamCeiling.spec.js" time="51.857">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+No data - skipping
+]]>
+</system-out>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC025 - Fails when DB has data but UI shows no rows" classname="solutionTeamCeiling.spec.js" time="26.255">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+]]>
+</system-out>
+<system-err>
+<![CDATA[Error getting solution team ceilings: relation "solution_team_ceilings" does not exist
+]]>
+</system-err>
+</testcase>
+<testcase name="Solution Team Ceiling Values Page Tests › Database Validation Tests › TC026 - UI empty state is valid only when DB is empty" classname="solutionTeamCeiling.spec.js" time="62.563">
+<system-out>
+<![CDATA[Navigating to Solution Team Ceiling Values page...
+✅ Page loaded
+✅ Disconnected from database
+]]>
+</system-out>
+<system-err>
+<![CDATA[Error getting solution team ceilings: relation "solution_team_ceilings" does not exist
+]]>
+</system-err>
+</testcase>
+</testsuite>
+</testsuites>

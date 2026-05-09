@@ -1,0 +1,23 @@
+{
+  "testTeamMembers": [
+    "S.K De Silva",
+    "N.M Perera",
+    "A.M Fonceka",
+    "A.P Alvis"
+  ],
+  "validCeilingValues": [25000, 50000, 75000, 100000, 150000, 200000],
+  "invalidCeilingValues": ["abc", "-5000", "0", "999999999", "!@#$%", "one million"],
+  "editScenarios": [
+    {
+      "teamMember": "S.K De Silva",
+      "newValue": "85000",
+      "description": "Increase ceiling value"
+    },
+    {
+      "teamMember": "N.M Perera",
+      "newValue": "45000",
+      "description": "Decrease ceiling value"
+    }
+  ],
+  "expectedHeaders": ["Team Member", "Ceiling Value", "Actions"]
+}

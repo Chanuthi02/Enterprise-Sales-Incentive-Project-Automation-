@@ -1,0 +1,56 @@
+{
+  "years": [2023, 2024, 2025],
+  "quarters": ["Q1", "Q2", "Q3", "Q4"],
+  "testTeams": [
+    {
+      "teamId": 1,
+      "teamName": "East Region Team",
+      "teamLead": "John Silva",
+      "quarterlyIncentive": 125000,
+      "calculationDetails": "Base incentive + Bonus",
+      "quarter": "Q1",
+      "year": 2024
+    },
+    {
+      "teamId": 2,
+      "teamName": "West Region Team",
+      "teamLead": "Maria Fernando",
+      "quarterlyIncentive": 98000,
+      "calculationDetails": "Base incentive + Achievement",
+      "quarter": "Q1",
+      "year": 2024
+    },
+    {
+      "teamId": 3,
+      "teamName": "Central Team",
+      "teamLead": "Rajesh Kumar",
+      "quarterlyIncentive": 156000,
+      "calculationDetails": "Base incentive + Performance Bonus",
+      "quarter": "Q1",
+      "year": 2024
+    },
+    {
+      "teamId": 4,
+      "teamName": "North Region Team",
+      "teamLead": "Alex Perera",
+      "quarterlyIncentive": 89000,
+      "calculationDetails": "Base incentive",
+      "quarter": "Q1",
+      "year": 2024
+    }
+  ],
+  "expectedHeaders": [
+    "TEAM NAME",
+    "TEAM LEAD",
+    "QUARTERLY INCENTIVE",
+    "CALCULATION DETAILS",
+    "ACTIONS",
+    "DETAILED CALCULATION"
+  ],
+  "saveTeamSectionLabels": [
+    "Save Team",
+    "Team Amounts",
+    "Update Team",
+    "Amount"
+  ]
+}

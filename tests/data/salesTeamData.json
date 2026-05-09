@@ -1,0 +1,14 @@
+{
+  "testYears": [2023, 2024, 2025],
+  "expectedHeaders": ["Salesperson Name", "Total Sales", "Incentive Amount", "Bonus", "Total Incentive"],
+  "incentiveRates": {
+    "tier1": { "min": 0, "max": 50000, "rate": 5 },
+    "tier2": { "min": 50001, "max": 100000, "rate": 7.5 },
+    "tier3": { "min": 100001, "max": null, "rate": 10 }
+  },
+  "validationRules": {
+    "incentiveFormat": "currency",
+    "minIncentive": 0,
+    "maxIncentive": 1000000
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "years": [2022, 2023, 2024, 2025],
+  "quarters": ["Q1", "Q2", "Q3", "Q4"],
+  "testSolutions": [
+    {
+      "solutionId": "1235689",
+      "customerName": "C.K Parara",
+      "solutionCategory": "SI Business Solution",
+      "solutionEng": "S.K De Silva",
+      "siEng": "N.M Perera",
+      "dsp": "2024-04-12",
+      "npv": 585000
+    },
+    {
+      "solutionId": "1235690",
+      "customerName": "Jone Silva",
+      "solutionCategory": "SI Business Solution",
+      "solutionEng": "A.M Fonceka",
+      "siEng": "A.P Alvis",
+      "dsp": "2024-04-15",
+      "npv": 423000
+    },
+    {
+      "solutionId": "1235691",
+      "customerName": "C.K Parara",
+      "solutionCategory": "SI Business Solution",
+      "solutionEng": "S.K De Silva",
+      "siEng": "N.M Perera",
+      "dsp": "2024-04-18",
+      "npv": 585000
+    }
+  ],
+  "expectedHeaders": [
+    "SOLUTION ID",
+    "CUSTOMER NAME",
+    "SOLUTION CATEGORY",
+    "SOLUTION ENG",
+    "SI ENG",
+    "DSP",
+    "NPV"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "testYears": [2024, 2025, 2026],
+  "testQuarters": ["Q1", "Q2", "Q3", "Q4"],
+  "testCombinations": [
+    { "year": "2024", "quarter": "Q1" },
+    { "year": "2024", "quarter": "Q2" },
+    { "year": "2024", "quarter": "Q3" },
+    { "year": "2024", "quarter": "Q4" }
+  ],
+  "expectedSolutionHeaders": [
+    "SOLUTION NAME",
+    "SOLUTION ID",
+    "CATEGORY",
+    "STATUS",
+    "ACTION"
+  ],
+  "expectedDetailsHeaders": [
+    "TEAM MEMBER",
+    "ROLE",
+    "ALLOCATION",
+    "CEILING",
+    "UTILIZATION"
+  ]
+}
