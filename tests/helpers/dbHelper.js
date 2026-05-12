@@ -176,6 +176,49 @@ class DatabaseHelper {
     }
   }
 
+  // Get a single employee for Employee View testing
+  async getFirstEmployee() {
+    try {
+      const query = `
+        SELECT id, name, email, region
+        FROM salespersons
+        ORDER BY id
+        LIMIT 1
+      `;
+      
+      const result = await this.client.query(query);
+      return result.rows[0] || null;
+    } catch (error) {
+      console.error('Error getting first employee:', error.message);
+      return null;
+    }
+  }
+
+  // Get employee incentive data for Employee View
+  async getEmployeeIncentiveData(employeeId, year) {
+    try {
+      const query = `
+        SELECT 
+          sp.id as employee_id,
+          sp.name as employee_name,
+          sp.email,
+          sp.region,
+          COALESCE(SUM(i.incentive_amount), 0) as total_incentive,
+          COUNT(DISTINCT i.sale_id) as total_sales
+        FROM salespersons sp
+        LEFT JOIN incentives i ON i.salesperson_id = sp.id AND EXTRACT(YEAR FROM i.incentive_date) = $1
+        WHERE sp.id = $2
+        GROUP BY sp.id, sp.name, sp.email, sp.region
+      `;
+      
+      const result = await this.client.query(query, [year, employeeId]);
+      return result.rows[0] || null;
+    } catch (error) {
+      console.error(`Error getting employee incentive data for ID ${employeeId}:`, error.message);
+      return null;
+    }
+  }
+
   // Get incentive summary for UI comparison
   async getIncentiveSummary(year) {
     try {
@@ -305,23 +348,26 @@ class DatabaseHelper {
 
   // ============ SOLUTION TEAM CEILING QUERIES ============
 
-  // Get all solution team ceiling values
+  // Get all solution team ceiling values from ceiling_values table
   async getSolutionTeamCeilings() {
     try {
       const query = `
         SELECT 
-          stc.id,
-          stc.solution_name,
-          stc.solution_eng_percentage,
-          stc.si_eng_percentage,
-          stc.solution_team_percentage,
-          stc.created_at,
-          stc.updated_at
-        FROM solution_team_ceilings stc
-        ORDER BY stc.solution_name
+          cv.id,
+          CONCAT(cv.role, ' - ', cv.team_type) as solution_name,
+          cv.role,
+          cv.term,
+          cv.team_type,
+          cv.section_code,
+          cv.ceiling_value as solution_team_percentage,
+          cv.created_at,
+          cv.created_at as updated_at
+        FROM public.ceiling_values cv
+        ORDER BY cv.role, cv.team_type
       `;
       
       const result = await this.client.query(query);
+      console.log(`✅ Retrieved ${result.rows.length} ceiling value records from database`);
       return result.rows;
     } catch (error) {
       console.error('Error getting solution team ceilings:', error.message);
@@ -329,22 +375,33 @@ class DatabaseHelper {
     }
   }
 
-  // Get specific solution ceiling value
+  // Get specific solution ceiling value from ceiling_values table
   async getSolutionCeilingValue(solutionName) {
     try {
+      // Try matching by role or team_type or combination
       const query = `
         SELECT 
-          stc.id,
-          stc.solution_name,
-          stc.solution_eng_percentage,
-          stc.si_eng_percentage,
-          stc.solution_team_percentage,
-          stc.updated_at
-        FROM solution_team_ceilings stc
-        WHERE LOWER(stc.solution_name) = LOWER($1)
+          cv.id,
+          CONCAT(cv.role, ' - ', cv.team_type) as solution_name,
+          cv.role,
+          cv.term,
+          cv.team_type,
+          cv.section_code,
+          cv.ceiling_value as solution_team_percentage,
+          cv.created_at
+        FROM public.ceiling_values cv
+        WHERE LOWER(cv.role) = LOWER($1) 
+           OR LOWER(cv.team_type) = LOWER($1)
+           OR LOWER(CONCAT(cv.role, ' - ', cv.team_type)) = LOWER($1)
+        LIMIT 1
       `;
       
       const result = await this.client.query(query, [solutionName]);
+      if (result.rows.length > 0) {
+        console.log(`✅ Found ceiling value for ${solutionName}`);
+      } else {
+        console.log(`⚠️ No ceiling value found for ${solutionName}`);
+      }
       return result.rows[0] || null;
     } catch (error) {
       console.error(`Error getting ceiling value for ${solutionName}:`, error.message);
@@ -355,14 +412,34 @@ class DatabaseHelper {
   // Update solution ceiling value (for testing)
   async updateSolutionCeiling(solutionName, newPercentage) {
     try {
-      const query = `
-        UPDATE solution_team_ceilings
-        SET solution_team_percentage = $1, updated_at = NOW()
-        WHERE LOWER(solution_name) = LOWER($2)
-        RETURNING *
-      `;
+      // Parse solution name to get role and team_type
+      let query, params;
       
-      const result = await this.client.query(query, [newPercentage, solutionName]);
+      if (solutionName.includes(' - ')) {
+        // Format: "ROLE - TEAM_TYPE"
+        const [role, teamType] = solutionName.split(' - ').map(s => s.trim());
+        query = `
+          UPDATE public.ceiling_values
+          SET ceiling_value = $1
+          WHERE LOWER(role) = LOWER($2) AND LOWER(team_type) = LOWER($3)
+          RETURNING *
+        `;
+        params = [newPercentage, role, teamType];
+      } else {
+        // Try matching by role or team_type
+        query = `
+          UPDATE public.ceiling_values
+          SET ceiling_value = $1
+          WHERE LOWER(role) = LOWER($2) OR LOWER(team_type) = LOWER($2)
+          RETURNING *
+        `;
+        params = [newPercentage, solutionName];
+      }
+      
+      const result = await this.client.query(query, params);
+      if (result.rows.length > 0) {
+        console.log(`✅ Updated ceiling value for ${solutionName} to ${newPercentage}`);
+      }
       return result.rows[0] || null;
     } catch (error) {
       console.error(`Error updating ceiling for ${solutionName}:`, error.message);

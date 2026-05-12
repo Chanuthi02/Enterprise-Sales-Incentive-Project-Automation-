@@ -3,10 +3,14 @@ class SolutionTeamCeilingPage {
   constructor(page) {
     this.page = page;
     
-    // Table selectors
+    // Table selectors - try multiple approaches since page might use different rendering
     this.ceilingTable = page.locator('table');
     this.tableRows = page.locator('table tbody tr');
     this.tableHeaders = page.locator('table thead th');
+    
+    // Alternative selectors for div-based tables
+    this.dataRows = page.locator('[role="row"]');
+    this.dataCells = page.locator('[role="cell"]');
     
     // Edit buttons
     this.editButtons = page.locator('button:has-text("Edit"), button:has-text("EDIT")');
@@ -27,22 +31,52 @@ class SolutionTeamCeilingPage {
     this.successMessage = page.locator('.success-message, .alert-success, .MuiAlert-root');
     this.errorMessage = page.locator('.error-message, .alert-danger, .MuiAlert-root[severity="error"]');
     this.loadingSpinner = page.locator('.MuiCircularProgress-root, .loading-spinner');
+    
+    // No data message (for debugging)
+    this.noDataMessage = page.locator('text=/no.*records?|no.*data/i');
   }
 
   // ========== NAVIGATION ==========
   
   async goto() {
     console.log('Navigating to Solution Team Ceiling Values page...');
-    await this.page.goto('https://dpdlab1.slt.lk:8454/solution-team-ceiling-values', {
-      waitUntil: 'domcontentloaded',
-      timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-    });
+    try {
+      // Use longer timeout and try 'load' first, fallback to 'domcontentloaded'
+      await this.page.goto('https://dpdlab1.slt.lk:8454/solution-team-ceiling-values', {
+        waitUntil: 'load',
+        timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '90000', 10)
+      }).catch(async (error) => {
+        console.log('⚠️ Load timeout, trying with domcontentloaded...');
+        await this.page.goto('https://dpdlab1.slt.lk:8454/solution-team-ceiling-values', {
+          waitUntil: 'domcontentloaded',
+          timeout: 30000
+        });
+      });
+    } catch (error) {
+      console.log('❌ Navigation failed:', error.message);
+      throw error;
+    }
+    
     await this.waitForPageLoad();
     console.log('✅ Page loaded');
+    
+    // Debug: Check if no data message is shown
+    const hasNoDataMessage = await this.noDataMessage.isVisible().catch(() => false);
+    if (hasNoDataMessage) {
+      const msg = await this.noDataMessage.first().textContent();
+      console.log(`⚠️ Page showing no-data message: "${msg}"`);
+    }
   }
 
   async waitForPageLoad() {
-    await this.page.waitForLoadState('domcontentloaded');
+    try {
+      await this.page.waitForLoadState('load').catch(() => {
+        console.log('⚠️ Load state not reached, waiting for domcontentloaded');
+        return this.page.waitForLoadState('domcontentloaded');
+      });
+    } catch (error) {
+      console.log('⚠️ Page load state wait timeout, continuing anyway...');
+    }
     await this.page.waitForTimeout(2000);
   }
 
@@ -71,23 +105,93 @@ class SolutionTeamCeilingPage {
     return await this.ceilingTable.isVisible().catch(() => false);
   }
 
+  async areDataTablesAvailable() {
+    // Check if either HTML table or div-based table exists on the page
+    const htmlTableExists = await this.ceilingTable.count().catch(() => 0) > 0;
+    const divTableExists = await this.dataRows.count().catch(() => 0) > 0;
+    const tablesAvailable = htmlTableExists || divTableExists;
+    
+    if (!tablesAvailable) {
+      console.log('⚠️ WARNING: Data tables are NOT available on the page');
+      console.log('   - No HTML tables found');
+      console.log('   - No div-based rows found');
+      return false;
+    }
+    
+    console.log('✅ Data tables ARE available on the page');
+    return true;
+  }
+
   async getRowCount() {
-    return await this.tableRows.count();
+    // Try HTML table first
+    let count = await this.tableRows.count().catch(() => 0);
+    if (count > 0) {
+      console.log(`Found ${count} rows in HTML table`);
+      return count;
+    }
+    
+    // Try role-based rows (for div-based tables)
+    count = await this.dataRows.count().catch(() => 0);
+    if (count > 0) {
+      console.log(`Found ${count} rows in div-based table`);
+      return count;
+    }
+    
+    console.log('⚠️ No table rows found using either selector');
+    return 0;
   }
 
   async getTableHeaders() {
-    const headers = await this.tableHeaders.all();
-    const headerTexts = [];
-    for (const header of headers) {
-      headerTexts.push((await header.textContent()).trim());
+    // Try HTML table headers first
+    let headers = await this.tableHeaders.all().catch(() => []);
+    if (headers.length > 0) {
+      const headerTexts = [];
+      for (const header of headers) {
+        headerTexts.push((await header.textContent()).trim());
+      }
+      return headerTexts;
     }
-    return headerTexts;
+    
+    // Try role-based headers (for div-based tables)
+    const headerCells = await this.page.locator('[role="columnheader"]').all();
+    if (headerCells.length > 0) {
+      const headerTexts = [];
+      for (const cell of headerCells) {
+        headerTexts.push((await cell.textContent()).trim());
+      }
+      return headerTexts;
+    }
+    
+    console.log('⚠️ No table headers found');
+    return [];
   }
 
   async getTableData() {
-    const rows = await this.tableRows.all();
-    const tableData = [];
+    const rows = await this.tableRows.all().catch(() => []);
+    if (rows.length === 0) {
+      // Try div-based rows
+      const divRows = await this.dataRows.all();
+      const tableData = [];
+      
+      for (const row of divRows) {
+        const cells = await row.locator('[role="cell"]').all();
+        const rowData = [];
+        for (const cell of cells) {
+          rowData.push((await cell.textContent()).trim());
+        }
+        if (rowData.length > 0) {
+          tableData.push(rowData);
+        }
+      }
+      
+      if (tableData.length > 0) {
+        console.log(`Extracted ${tableData.length} rows from div-based table`);
+      }
+      return tableData;
+    }
     
+    // HTML table rows
+    const tableData = [];
     for (const row of rows) {
       const cells = await row.locator('td').all();
       const rowData = [];
@@ -97,11 +201,12 @@ class SolutionTeamCeilingPage {
       tableData.push(rowData);
     }
     
+    console.log(`Extracted ${tableData.length} rows from HTML table`);
     return tableData;
   }
 
   async getRowIndexBySolution(solutionName) {
-    const rows = await this.tableRows.all();
+    const rows = await this.tableRows.all().catch(() => []);
     
     for (let i = 0; i < rows.length; i++) {
       const cells = await rows[i].locator('td').all();

@@ -598,6 +598,184 @@ class ApproveSolutionTeamSalesPage {
       return [];
     }
   }
+
+  // ========== EDIT MODAL METHODS ==========
+  
+  async clickEditButton() {
+    console.log('Clicking Edit button...');
+    try {
+      const editBtn = this.page.locator('button:has-text("Edit"), button:has-text("EDIT")').first();
+      if (await editBtn.isVisible().catch(() => false)) {
+        await editBtn.click();
+        await this.page.waitForTimeout(1000);
+        console.log('✅ Edit button clicked');
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error('Error clicking Edit button:', error.message);
+      return false;
+    }
+  }
+
+  async isEditModalVisible() {
+    try {
+      // Look for edit modal - could be a dialog or modal container
+      const editModal = this.page.locator('dialog, .modal, .MuiDialog-root, .edit-modal').first();
+      return await editModal.isVisible().catch(() => false);
+    } catch {
+      return false;
+    }
+  }
+
+  async getEditFormFields() {
+    try {
+      // Get all input fields in the current modal/dialog
+      const inputs = await this.page.locator('dialog input, .modal input, dialog textarea, .modal textarea, dialog select, .modal select').all();
+      return inputs;
+    } catch (error) {
+      console.error('Error getting form fields:', error.message);
+      return [];
+    }
+  }
+
+  async getL1StatusDropdown() {
+    try {
+      // L1 Status is typically the first dropdown in edit modal
+      const dropdowns = await this.page.locator('dialog select, .modal select, dialog [role="combobox"], .modal [role="combobox"]').all();
+      return dropdowns.length > 0 ? dropdowns[0] : null;
+    } catch (error) {
+      console.error('Error getting L1 Status dropdown:', error.message);
+      return null;
+    }
+  }
+
+  async getL2StatusDropdown() {
+    try {
+      // L2 Status is typically the second dropdown in edit modal
+      const dropdowns = await this.page.locator('dialog select, .modal select, dialog [role="combobox"], .modal [role="combobox"]').all();
+      return dropdowns.length > 1 ? dropdowns[1] : null;
+    } catch (error) {
+      console.error('Error getting L2 Status dropdown:', error.message);
+      return null;
+    }
+  }
+
+  async getCommentField() {
+    try {
+      // Comment field is typically a textarea
+      const textarea = this.page.locator('dialog textarea, .modal textarea').first();
+      return await textarea.isVisible().catch(() => false) ? textarea : null;
+    } catch (error) {
+      console.error('Error getting comment field:', error.message);
+      return null;
+    }
+  }
+
+  async setFieldValue(fieldSelector, value) {
+    try {
+      const field = this.page.locator(fieldSelector).first();
+      if (await field.isVisible().catch(() => false)) {
+        await field.fill(value);
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error(`Error setting field value: ${error.message}`);
+      return false;
+    }
+  }
+
+  async selectDropdownOption(dropdownSelector, optionText) {
+    try {
+      const dropdown = this.page.locator(dropdownSelector).first();
+      
+      // Check if it's a select element or Material-UI dropdown
+      const tagName = await dropdown.evaluate(el => el.tagName);
+      
+      if (tagName === 'SELECT') {
+        await dropdown.selectOption({ label: optionText });
+      } else {
+        // Material-UI dropdown
+        await dropdown.click();
+        await this.page.waitForTimeout(500);
+        const option = this.page.locator(`[role="option"]:has-text("${optionText}")`).first();
+        if (await option.isVisible().catch(() => false)) {
+          await option.click();
+        }
+      }
+      return true;
+    } catch (error) {
+      console.error(`Error selecting dropdown option: ${error.message}`);
+      return false;
+    }
+  }
+
+  async getFieldValue(fieldSelector) {
+    try {
+      const field = this.page.locator(fieldSelector).first();
+      return await field.inputValue().catch(() => null);
+    } catch (error) {
+      console.error('Error getting field value:', error.message);
+      return null;
+    }
+  }
+
+  async clickSaveButton() {
+    console.log('Clicking Save button...');
+    try {
+      const saveBtn = this.page.locator('button:has-text("Save"), button:has-text("SAVE"), button:has-text("Submit")').first();
+      if (await saveBtn.isVisible().catch(() => false)) {
+        await saveBtn.click();
+        await this.page.waitForTimeout(1500);
+        console.log('✅ Save button clicked');
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error('Error clicking Save button:', error.message);
+      return false;
+    }
+  }
+
+  async clickCancelButton() {
+    console.log('Clicking Cancel button...');
+    try {
+      const cancelBtn = this.page.locator('button:has-text("Cancel"), button:has-text("CANCEL"), button:has-text("Close"), button:has-text("Close Modal")').first();
+      if (await cancelBtn.isVisible().catch(() => false)) {
+        await cancelBtn.click();
+        await this.page.waitForTimeout(1000);
+        console.log('✅ Cancel button clicked');
+        return true;
+      }
+      return false;
+    } catch (error) {
+      console.error('Error clicking Cancel button:', error.message);
+      return false;
+    }
+  }
+
+  async getValidationError() {
+    try {
+      // Look for error messages
+      const error = this.page.locator('.error, .MuiFormHelperText-root, [role="alert"], .error-message').first();
+      if (await error.isVisible().catch(() => false)) {
+        return await error.textContent();
+      }
+      return null;
+    } catch {
+      return null;
+    }
+  }
+
+  async hasValidationError() {
+    try {
+      const error = this.page.locator('.error, .MuiFormHelperText-root, [role="alert"], .error-message').first();
+      return await error.isVisible().catch(() => false);
+    } catch {
+      return false;
+    }
+  }
 }
 
 module.exports = { ApproveSolutionTeamSalesPage };
