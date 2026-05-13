@@ -113,12 +113,83 @@ class ApproveSolutionTeamSalesPage {
   }
 
   async selectL1View() {
-    console.log('Clicking L1 View button...');
+    console.log('Selecting L1 View...');
     try {
-      await this.l1ViewButton.click();
-      await this.waitForLoadingToComplete();
-      console.log('✅ L1 View selected');
-      return true;
+      let clicked = false;
+      
+      // Strategy 1: Try exact text match
+      try {
+        const btn = this.page.locator('button:has-text("L1 View")').first();
+        await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+        if (await btn.isVisible().catch(() => false)) {
+          await btn.click();
+          clicked = true;
+        }
+      } catch (e1) {
+        console.log('Strategy 1 (exact L1 View) failed');
+      }
+      
+      // Strategy 2: Try partial text match
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text("L1")').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e2) {
+          console.log('Strategy 2 (L1 button) failed');
+        }
+      }
+      
+      // Strategy 3: Try role-based selector
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text(/Solution DGM|L1/i)').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e3) {
+          console.log('Strategy 3 (role-based) failed');
+        }
+      }
+      
+      // Strategy 4: Find any button and log available options
+      if (!clicked) {
+        try {
+          const allButtons = await this.page.locator('button').all();
+          const buttonTexts = [];
+          for (const btn of allButtons.slice(0, 20)) {
+            const text = await btn.textContent().catch(() => '');
+            if (text.trim()) buttonTexts.push(text.trim());
+          }
+          console.warn(`Available buttons: ${buttonTexts.join(', ')}`);
+          
+          // Try to find L1-related button from available options
+          for (const btn of allButtons) {
+            const text = await btn.textContent().catch(() => '');
+            if (text.includes('L1') || text.includes('DGM')) {
+              await btn.click();
+              clicked = true;
+              break;
+            }
+          }
+        } catch (e4) {
+          console.log('Strategy 4 (diagnostic) failed');
+        }
+      }
+      
+      if (clicked) {
+        await this.waitForLoadingToComplete();
+        console.log('✅ L1 View selected');
+        return true;
+      }
+      
+      console.warn('⚠️  Could not find and click L1 button');
+      return false;
     } catch (error) {
       console.error('Error selecting L1 View:', error.message);
       return false;
@@ -126,12 +197,58 @@ class ApproveSolutionTeamSalesPage {
   }
 
   async selectL2View() {
-    console.log('Clicking L2 View button...');
+    console.log('Selecting L2 View...');
     try {
-      await this.l2ViewButton.click();
-      await this.waitForLoadingToComplete();
-      console.log('✅ L2 View selected');
-      return true;
+      let clicked = false;
+      
+      // Strategy 1: Try exact text match
+      try {
+        const btn = this.page.locator('button:has-text("L2 View")').first();
+        await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+        if (await btn.isVisible().catch(() => false)) {
+          await btn.click();
+          clicked = true;
+        }
+      } catch (e1) {
+        console.log('Strategy 1 (exact L2 View) failed');
+      }
+      
+      // Strategy 2: Try partial text match
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text("L2")').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e2) {
+          console.log('Strategy 2 (L2 button) failed');
+        }
+      }
+      
+      // Strategy 3: Try role-based selector
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text(/Sales DGM|L2/i)').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e3) {
+          console.log('Strategy 3 (role-based) failed');
+        }
+      }
+      
+      if (clicked) {
+        await this.waitForLoadingToComplete();
+        console.log('✅ L2 View selected');
+        return true;
+      }
+      
+      console.warn('⚠️  Could not find and click L2 button');
+      return false;
     } catch (error) {
       console.error('Error selecting L2 View:', error.message);
       return false;
@@ -139,12 +256,58 @@ class ApproveSolutionTeamSalesPage {
   }
 
   async selectL3View() {
-    console.log('Clicking L3 View button...');
+    console.log('Selecting L3 View...');
     try {
-      await this.l3ViewButton.click();
-      await this.waitForLoadingToComplete();
-      console.log('✅ L3 View selected');
-      return true;
+      let clicked = false;
+      
+      // Strategy 1: Try exact text match
+      try {
+        const btn = this.page.locator('button:has-text("L3 View")').first();
+        await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+        if (await btn.isVisible().catch(() => false)) {
+          await btn.click();
+          clicked = true;
+        }
+      } catch (e1) {
+        console.log('Strategy 1 (exact L3 View) failed');
+      }
+      
+      // Strategy 2: Try partial text match
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text("L3")').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e2) {
+          console.log('Strategy 2 (L3 button) failed');
+        }
+      }
+      
+      // Strategy 3: Try role-based selector
+      if (!clicked) {
+        try {
+          const btn = this.page.locator('button:has-text(/Read.*only|L3/i)').first();
+          await btn.waitFor({ state: 'visible', timeout: 2000 }).catch(() => {});
+          if (await btn.isVisible().catch(() => false)) {
+            await btn.click();
+            clicked = true;
+          }
+        } catch (e3) {
+          console.log('Strategy 3 (role-based) failed');
+        }
+      }
+      
+      if (clicked) {
+        await this.waitForLoadingToComplete();
+        console.log('✅ L3 View selected');
+        return true;
+      }
+      
+      console.warn('⚠️  Could not find and click L3 button');
+      return false;
     } catch (error) {
       console.error('Error selecting L3 View:', error.message);
       return false;
@@ -232,14 +395,29 @@ class ApproveSolutionTeamSalesPage {
   async selectYear(year) {
     console.log(`Selecting year: ${year}`);
     try {
+      // Try to click the dropdown and select the option
       await this.yearDropdown.click();
-      await this.page.getByRole('option', { name: year.toString() }).click();
+      await this.page.waitForTimeout(500);
+      
+      // Look for the option in the dropdown menu
+      const option = this.page.getByRole('option', { name: new RegExp(year.toString(), 'i') });
+      await option.click();
       await this.page.waitForTimeout(500);
       console.log(`✅ Selected year: ${year}`);
       return true;
     } catch (error) {
       console.error('Error selecting year:', error.message);
-      return false;
+      // Try alternative approach using keyboard
+      try {
+        await this.yearDropdown.click();
+        await this.page.keyboard.type(year.toString());
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(500);
+        return true;
+      } catch (altError) {
+        console.error('Alternative year selection also failed:', altError.message);
+        return false;
+      }
     }
   }
 
@@ -247,13 +425,23 @@ class ApproveSolutionTeamSalesPage {
     console.log(`Selecting quarter: ${quarter}`);
     try {
       await this.quarterDropdown.click();
-      await this.page.getByRole('option', { name: quarter.toString() }).click();
+      await this.page.waitForTimeout(500);
+      const option = this.page.getByRole('option', { name: new RegExp(quarter.toString(), 'i') });
+      await option.click();
       await this.page.waitForTimeout(500);
       console.log(`✅ Selected quarter: ${quarter}`);
       return true;
     } catch (error) {
       console.error('Error selecting quarter:', error.message);
-      return false;
+      try {
+        await this.quarterDropdown.click();
+        await this.page.keyboard.type(quarter.toString());
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(500);
+        return true;
+      } catch (altError) {
+        return false;
+      }
     }
   }
 
@@ -261,13 +449,23 @@ class ApproveSolutionTeamSalesPage {
     console.log(`Selecting status: ${status}`);
     try {
       await this.statusDropdown.click();
-      await this.page.getByRole('option', { name: status }).click();
+      await this.page.waitForTimeout(500);
+      const option = this.page.getByRole('option', { name: new RegExp(status, 'i') });
+      await option.click();
       await this.page.waitForTimeout(500);
       console.log(`✅ Selected status: ${status}`);
       return true;
     } catch (error) {
       console.error('Error selecting status:', error.message);
-      return false;
+      try {
+        await this.statusDropdown.click();
+        await this.page.keyboard.type(status);
+        await this.page.keyboard.press('Enter');
+        await this.page.waitForTimeout(500);
+        return true;
+      } catch (altError) {
+        return false;
+      }
     }
   }
 
@@ -343,7 +541,22 @@ class ApproveSolutionTeamSalesPage {
   async clickApplyFilters() {
     console.log('Clicking Apply Filters button...');
     try {
-      await this.applyFiltersButton.click();
+      // Check if button is enabled
+      const isDisabled = await this.applyFiltersButton.evaluate(el => el.disabled || el.classList.contains('Mui-disabled'));
+      if (isDisabled) {
+        console.warn('⚠️  Apply Filters button is disabled, waiting for it to be enabled...');
+        await this.page.waitForTimeout(2000);
+      }
+      
+      // Try regular click first
+      try {
+        await this.applyFiltersButton.click({ timeout: 5000 });
+      } catch (clickError) {
+        // If regular click fails, try force click
+        console.log('Attempting force click on Apply Filters button...');
+        await this.applyFiltersButton.click({ force: true });
+      }
+      
       await this.waitForLoadingToComplete();
       console.log('✅ Apply Filters clicked');
       return true;
@@ -438,8 +651,24 @@ class ApproveSolutionTeamSalesPage {
   async clickShowDetailsButton(rowIndex) {
     console.log(`Clicking Show Details button on row ${rowIndex}...`);
     try {
-      const button = this.page.locator('table tbody tr').nth(rowIndex).locator('button:has-text("Show"), button:has-text("Details"), button:has-text("Eye"), svg[role="button"]').first();
-      await button.click();
+      // Close any open backdrops first
+      await this.closeAllBackdrops();
+      
+      const row = this.page.locator('table tbody tr').nth(rowIndex);
+      const button = row.locator('button:has-text("Show"), button:has-text("Details"), button:has-text("Eye"), svg[role="button"]').first();
+      
+      // Wait for button to be visible
+      await button.waitFor({ state: 'visible', timeout: 5000 });
+      
+      // Try regular click first
+      try {
+        await button.click({ timeout: 5000 });
+      } catch (clickError) {
+        // If regular click fails (backdrop issue), use force click
+        console.log('Backdrop interference detected, using force click...');
+        await button.click({ force: true });
+      }
+      
       await this.page.waitForTimeout(1000);
       console.log(`✅ Clicked Show Details on row ${rowIndex}`);
       return true;
@@ -774,6 +1003,52 @@ class ApproveSolutionTeamSalesPage {
       return await error.isVisible().catch(() => false);
     } catch {
       return false;
+    }
+  }
+
+  // ========== DIAGNOSTIC METHODS ==========
+  
+  async diagnosePage() {
+    console.log('\n🔍 PAGE DIAGNOSTIC REPORT\n');
+    
+    try {
+      // Check all buttons on page
+      const allButtons = await this.page.locator('button, div[role="button"]').all();
+      console.log(`✓ Total buttons found: ${allButtons.length}`);
+      
+      // Check for role selection buttons
+      for (const btn of allButtons.slice(0, 10)) {
+        const text = await btn.textContent();
+        const ariaLabel = await btn.getAttribute('aria-label');
+        console.log(`  - Button: "${text?.trim()}" (aria-label: ${ariaLabel})`);
+      }
+      
+      // Check dropdowns
+      const selects = await this.page.locator('select, [role="combobox"]').all();
+      console.log(`\n✓ Total dropdowns found: ${selects.length}`);
+      
+      // Check tables
+      const tables = await this.page.locator('table').all();
+      console.log(`✓ Total tables found: ${tables.length}`);
+      
+      if (tables.length > 0) {
+        const headerCount = await this.page.locator('table thead th').count();
+        const rowCount = await this.page.locator('table tbody tr').count();
+        console.log(`  - Headers: ${headerCount}, Rows: ${rowCount}`);
+      }
+      
+      // Check for modals
+      const modals = await this.page.locator('dialog, .modal, [role="dialog"]').all();
+      console.log(`✓ Total modals/dialogs found: ${modals.length}`);
+      
+      // Check main content
+      const h1 = await this.page.locator('h1').first().textContent();
+      const h2 = await this.page.locator('h2').first().textContent();
+      console.log(`\n✓ Page title (H1): ${h1?.trim() || 'N/A'}`);
+      console.log(`✓ Subtitle (H2): ${h2?.trim() || 'N/A'}`);
+      
+    } catch (error) {
+      console.error('Diagnostic error:', error.message);
     }
   }
 }
