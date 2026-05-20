@@ -31,14 +31,16 @@ test('Sections Full Flow (Slightly Slower)', async ({ page }) => {
   await slow(page);
 
   // Update section code
-  const codeField = page.locator('[id="_r_p_"]');
+  const codeField = page.locator('text=Section Code').locator('xpath=following::*[@role="textbox"][1]');
+  await expect(codeField).toBeVisible({ timeout: 60000 });
   await codeField.click();
   await slow(page);
   await codeField.fill('CES@');
   await slow(page);
 
   // Update section name
-  const nameField = page.locator('[id="_r_q_"]');
+  const nameField = page.locator('text=Section Name').locator('xpath=following::*[@role="textbox"][1]');
+  await expect(nameField).toBeVisible({ timeout: 60000 });
   await nameField.click();
   await slow(page);
   await nameField.press('End');
@@ -47,23 +49,27 @@ test('Sections Full Flow (Slightly Slower)', async ({ page }) => {
   await slow(page);
 
   // Dropdowns
-  await page.getByRole('combobox', { name: 'International' }).click();
+  const productType = page.locator('text=Product Type').locator('xpath=following::*[@role="combobox"][1]');
+  await productType.click();
   await slow(page);
   await page.getByRole('option', { name: 'Domestic' }).click();
   await slow(page);
 
-  await page.getByRole('combobox', { name: 'SALESTEAM' }).click();
+  const teamType = page.locator('text=Team Type').locator('xpath=following::*[@role="combobox"][1]');
+  await teamType.click();
   await slow(page);
   await page.getByRole('option', { name: 'SALESTEAM' }).click();
   await slow(page);
 
-  await page.getByRole('combobox', { name: 'EB - Enterprise Business' }).click();
+  const divisionField = page.locator('text=Division').locator('xpath=following::*[@role="combobox"][1]');
+  await divisionField.click();
   await slow(page);
   await page.getByRole('option', { name: '- PRIVATE' }).click();
   await slow(page);
 
   // Value field
-  const valueField = page.locator('[id="_r_11_"]');
+  const valueField = page.locator('text=Staff Count').locator('xpath=following::*[@role="spinbutton"][1]');
+  await expect(valueField).toBeVisible({ timeout: 60000 });
   await valueField.click();
   await slow(page);
   await valueField.fill('0');
@@ -84,31 +90,36 @@ test('Sections Full Flow (Slightly Slower)', async ({ page }) => {
   await slow(page);
 
   // New code
-  const newCode = page.locator('[id="_r_15_"]');
+  const newCode = page.locator('text=Section Code').locator('xpath=following::*[@role="textbox"][1]');
+  await expect(newCode).toBeVisible({ timeout: 60000 });
   await newCode.click();
   await slow(page);
   await newCode.fill('CES');
   await slow(page);
 
   // New name
-  const newName = page.locator('[id="_r_16_"]');
+  const newName = page.locator('text=Section Name').locator('xpath=following::*[@role="textbox"][1]');
+  await expect(newName).toBeVisible({ timeout: 60000 });
   await newName.click();
   await slow(page);
   await newName.fill('Network');
   await slow(page);
 
   // Dropdowns
-  await page.locator('[id="_r_17_"]').click();
+  const newProductType = page.locator('text=Product Type').locator('xpath=following::*[@role="combobox"][1]');
+  await newProductType.click();
   await slow(page);
   await page.getByRole('option', { name: 'Domestic' }).click();
   await slow(page);
 
-  await page.locator('[id="_r_19_"]').click();
+  const newTeamType = page.locator('text=Team Type').locator('xpath=following::*[@role="combobox"][1]');
+  await newTeamType.click();
   await slow(page);
   await page.getByRole('option', { name: 'SALESTEAM' }).click();
   await slow(page);
 
-  await page.getByLabel('', { exact: true }).click();
+  const newDivision = page.locator('text=Division').locator('xpath=following::*[@role="combobox"][1]');
+  await newDivision.click();
   await slow(page);
   await page.getByRole('option', { name: 'DP - Digital Platforms' }).click();
   await slow(page);
