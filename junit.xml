@@ -1,578 +1,42 @@
-<testsuites id="" name="" tests="80" failures="14" skipped="4" errors="0" time="1607.456592">
-<testsuite name="approveSolutionTeamSales.spec.js" timestamp="2026-05-13T02:16:05.044Z" hostname="chromium" tests="80" failures="14" skipped="4" time="5493.05" errors="0">
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC001 - Page loads successfully" classname="approveSolutionTeamSales.spec.js" time="166.026">
-<failure message="approveSolutionTeamSales.spec.js:44:5 TC001 - Page loads successfully" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:44:5 › Approve Solution Team Sales Page Tests › UI and Layout Tests › TC001 - Page loads successfully 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testsuites id="" name="" tests="73" failures="2" skipped="4" errors="0" time="1072.731149">
+<testsuite name="approveSolutionTeamSales.spec.js" timestamp="2026-05-26T01:17:16.662Z" hostname="chromium" tests="73" failures="2" skipped="4" time="4092.501" errors="0">
+<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC002 - Header is visible and properly displayed" classname="approveSolutionTeamSales.spec.js" time="71.068">
 <system-out>
 <![CDATA[✅ Connected to PostgreSQL database
 ✅ Database connection successful
 Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-9ee46-1---Page-loads-successfully-chromium-retry1\trace.zip]]
+✅ Page loaded
+Header visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC002 - Header is visible and properly displayed" classname="approveSolutionTeamSales.spec.js" time="161.069">
-<failure message="approveSolutionTeamSales.spec.js:50:5 TC002 - Header is visible and properly displayed" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:50:5 › Approve Solution Team Sales Page Tests › UI and Layout Tests › TC002 - Header is visible and properly displayed 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC003 - Logo is visible in header/footer" classname="approveSolutionTeamSales.spec.js" time="58.323">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-3e020-ible-and-properly-displayed-chromium-retry1\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC003 - Logo is visible in header/footer" classname="approveSolutionTeamSales.spec.js" time="69.854">
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
+<![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Logo visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC004 - Footer is visible" classname="approveSolutionTeamSales.spec.js" time="120.901">
-<failure message="approveSolutionTeamSales.spec.js:62:5 TC004 - Footer is visible" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:62:5 › Approve Solution Team Sales Page Tests › UI and Layout Tests › TC004 - Footer is visible 
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      67 |       } catch (error) {
-      68 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 69 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      70 |       }
-      71 |     });
-      72 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:69:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      67 |       } catch (error) {
-      68 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 69 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      70 |       }
-      71 |     });
-      72 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:69:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC009 - Role selection modal appears on page load" classname="approveSolutionTeamSales.spec.js" time="21.271">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
-Footer visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Footer visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-95429-s-TC004---Footer-is-visible-chromium-retry1\trace.zip]]
+Selecting L1 View...
+✅ L1 View selected
+Role selection available: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC005 - Footer logo is clearly visible" classname="approveSolutionTeamSales.spec.js" time="120.865">
-<failure message="approveSolutionTeamSales.spec.js:73:5 TC005 - Footer logo is clearly visible" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:73:5 › Approve Solution Team Sales Page Tests › UI and Layout Tests › TC005 - Footer logo is clearly visible 
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      78 |       } catch (error) {
-      79 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 80 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      81 |       }
-      82 |     });
-      83 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:80:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      78 |       } catch (error) {
-      79 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 80 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      81 |       }
-      82 |     });
-      83 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:80:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Footer logo visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Footer logo visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a55d9-ter-logo-is-clearly-visible-chromium-retry1\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC006 - Footer contains copyright/footer information" classname="approveSolutionTeamSales.spec.js" time="138.409">
-<failure message="approveSolutionTeamSales.spec.js:84:5 TC006 - Footer contains copyright/footer information" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:84:5 › Approve Solution Team Sales Page Tests › UI and Layout Tests › TC006 - Footer contains copyright/footer information 
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      89 |       } catch (error) {
-      90 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 91 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      92 |       }
-      93 |     });
-      94 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:91:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      89 |       } catch (error) {
-      90 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 91 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-         |                            ^
-      92 |       }
-      93 |     });
-      94 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:91:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Footer text: null
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mnull[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Footer text: null
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mnull[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-a05d9-opyright-footer-information-chromium-retry1\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC007 - Page has no error messages on load" classname="approveSolutionTeamSales.spec.js" time="77.397">
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Has error message: false
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › UI and Layout Tests › TC008 - Page layout is responsive and elements are properly aligned" classname="approveSolutionTeamSales.spec.js" time="62.557">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC010 - Role selection buttons are available" classname="approveSolutionTeamSales.spec.js" time="60.346">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-✅ Screenshot saved: page_layout.png
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC009 - Role selection modal appears on page load" classname="approveSolutionTeamSales.spec.js" time="118.852">
-<failure message="approveSolutionTeamSales.spec.js:114:5 TC009 - Role selection modal appears on page load" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:114:5 › Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC009 - Role selection modal appears on page load 
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      120 |       } catch (error) {
-      121 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 122 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-          |                            ^
-      123 |       }
-      124 |     });
-      125 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:122:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      120 |       } catch (error) {
-      121 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 122 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
-          |                            ^
-      123 |       }
-      124 |     });
-      125 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:122:28
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
-<system-out>
-<![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Role selection modal visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Role selection modal visible: false
-⚠️  Test error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
-
-Received: [31mfalse[39m
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-aaa89--modal-appears-on-page-load-chromium-retry1\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC010 - Role selection buttons are available" classname="approveSolutionTeamSales.spec.js" time="58.146">
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Role buttons count: 3
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC011 - Role buttons have correct labels (L1, L2, L3)" classname="approveSolutionTeamSales.spec.js" time="29.452">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC011 - Role buttons have correct labels (L1, L2, L3)" classname="approveSolutionTeamSales.spec.js" time="61.696">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -580,7 +44,7 @@ Role button texts: L1 View, L2 View, L3 View
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC012 - Select L1 View (Solution DGM) - Can approve L1 status" classname="approveSolutionTeamSales.spec.js" time="57.03">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC012 - Select L1 View (Solution DGM) - Can approve L1 status" classname="approveSolutionTeamSales.spec.js" time="66.996">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -590,7 +54,7 @@ L1 View selected successfully: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC013 - Select L2 View (Sales DGM) - Can approve L2 status" classname="approveSolutionTeamSales.spec.js" time="51.653">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC013 - Select L2 View (Sales DGM) - Can approve L2 status" classname="approveSolutionTeamSales.spec.js" time="63.877">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -600,7 +64,7 @@ L2 View selected successfully: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC014 - Select L3 View (Read-only) - Read-only access to all records" classname="approveSolutionTeamSales.spec.js" time="41.254">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC014 - Select L3 View (Read-only) - Read-only access to all records" classname="approveSolutionTeamSales.spec.js" time="38.237">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -610,7 +74,7 @@ L3 View selected successfully: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC015 - Switching views updates page context and data" classname="approveSolutionTeamSales.spec.js" time="58.24">
+<testcase name="Approve Solution Team Sales Page Tests › Role Selection - View Tests › TC015 - Switching views updates page context and data" classname="approveSolutionTeamSales.spec.js" time="78.119">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -626,104 +90,21 @@ L2 View title: null
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC016 - Filter section is visible" classname="approveSolutionTeamSales.spec.js" time="40.41">
-<failure message="approveSolutionTeamSales.spec.js:214:5 TC016 - Filter section is visible" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:214:5 › Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC016 - Filter section is visible 
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      218 |       const isFilterVisible = await approvePage.isFilterSectionVisible();
-      219 |       console.log(`Filter section visible: ${isFilterVisible}`);
-    > 220 |       expect(isFilterVisible).toBeTruthy();
-          |                               ^
-      221 |     });
-      222 |
-      223 |     test('TC017 - Year dropdown is accessible and has options', async () => {
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:220:31
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\error-context.md
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toBeTruthy()
-
-    Received: false
-
-      218 |       const isFilterVisible = await approvePage.isFilterSectionVisible();
-      219 |       console.log(`Filter section visible: ${isFilterVisible}`);
-    > 220 |       expect(isFilterVisible).toBeTruthy();
-          |                               ^
-      221 |     });
-      222 |
-      223 |     test('TC017 - Year dropdown is accessible and has options', async () => {
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:220:31
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Error Context: ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\error-context.md
-
-    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC016 - Filter section is visible" classname="approveSolutionTeamSales.spec.js" time="42.396">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Selecting L1 View...
 ✅ L1 View selected
 Filter section visible: false
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-Selecting L1 View...
-✅ L1 View selected
-Filter section visible: false
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\error-context.md]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-15d16---Filter-section-is-visible-chromium-retry1\trace.zip]]
+Year options: ALL, 2024, 2025, 2026
+Year dropdown available: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC017 - Year dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="21.101">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC017 - Year dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="57.945">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
+<![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Selecting L1 View...
 ✅ L1 View selected
@@ -732,7 +113,7 @@ Year options: ALL, 2024, 2025, 2026
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC018 - Quarter dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="19.982">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC018 - Quarter dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="37.124">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -743,7 +124,7 @@ Quarter options: ALL, 2024, 2025, 2026
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC019 - Status dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="19.923">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC019 - Status dropdown is accessible and has options" classname="approveSolutionTeamSales.spec.js" time="61.287">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -754,7 +135,7 @@ Status options: ALL, Q1, Q2, Q3, Q4
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC020 - Can select year from dropdown" classname="approveSolutionTeamSales.spec.js" time="21.26">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC020 - Can select year from dropdown" classname="approveSolutionTeamSales.spec.js" time="49.284">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -764,96 +145,25 @@ Year options: ALL, 2024, 2025, 2026
 Selecting year: ALL
 ✅ Selected year: ALL
 Selected year: ALL, Success: true
-✅ Disconnected from database
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC021 - Can select quarter from dropdown" classname="approveSolutionTeamSales.spec.js" time="165.073">
-<failure message="approveSolutionTeamSales.spec.js:279:5 TC021 - Can select quarter from dropdown" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:279:5 › Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC021 - Can select quarter from dropdown 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC021 - Can select quarter from dropdown" classname="approveSolutionTeamSales.spec.js" time="33.571">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-71515-elect-quarter-from-dropdown-chromium-retry1\trace.zip]]
+<![CDATA[Navigating to Approve Solution Team Sales page...
+✅ Page loaded
+Selecting L1 View...
+✅ L1 View selected
+Quarter options: ALL, 2024, 2025, 2026
+Selecting quarter: ALL
+✅ Selected quarter: ALL
+Selected quarter: ALL, Success: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC022 - Can select status from dropdown" classname="approveSolutionTeamSales.spec.js" time="145.774">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC022 - Can select status from dropdown" classname="approveSolutionTeamSales.spec.js" time="51.062">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-81d1b-select-status-from-dropdown-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
+<![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Selecting L1 View...
 ✅ L1 View selected
@@ -861,12 +171,10 @@ Status options: ALL, Q1, Q2, Q3, Q4
 Selecting status: ALL
 ✅ Selected status: ALL
 Selected status: ALL, Success: true
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-81d1b-select-status-from-dropdown-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC023 - Apply Filters button filters data correctly" classname="approveSolutionTeamSales.spec.js" time="38.147">
+<testcase name="Approve Solution Team Sales Page Tests › Filter Section and Dropdowns Tests › TC023 - Apply Filters button filters data correctly" classname="approveSolutionTeamSales.spec.js" time="70.693">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -887,7 +195,7 @@ Table visible: true, No data message: false
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC024 - View Sales button is visible" classname="approveSolutionTeamSales.spec.js" time="67.225">
+<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC024 - View Sales button is visible" classname="approveSolutionTeamSales.spec.js" time="67.093">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -897,7 +205,7 @@ View Sales button visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC025 - Click View Sales button loads table data" classname="approveSolutionTeamSales.spec.js" time="60.138">
+<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC025 - Click View Sales button loads table data" classname="approveSolutionTeamSales.spec.js" time="49.246">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -907,12 +215,15 @@ Clicking View Sales button...
 ✅ View Sales clicked
 View Sales clicked successfully: true
 Table visible: true, No data message: false
+✅ Disconnected from database
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC026 - View Sales button is enabled/clickable" classname="approveSolutionTeamSales.spec.js" time="65.866">
+<testcase name="Approve Solution Team Sales Page Tests › View Sales Button Tests › TC026 - View Sales button is enabled/clickable" classname="approveSolutionTeamSales.spec.js" time="72.406">
 <system-out>
-<![CDATA[Navigating to Approve Solution Team Sales page...
+<![CDATA[✅ Connected to PostgreSQL database
+✅ Database connection successful
+Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Selecting L1 View...
 ✅ L1 View selected
@@ -920,7 +231,7 @@ View Sales button enabled: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC027 - Table is displayed after View Sales action" classname="approveSolutionTeamSales.spec.js" time="62.716">
+<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC027 - Table is displayed after View Sales action" classname="approveSolutionTeamSales.spec.js" time="70.198">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -932,7 +243,7 @@ Table visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC028 - Table has proper headers (Solution ID, Eng, SI Eng, Category, L1 Status, L2 Status, etc.)" classname="approveSolutionTeamSales.spec.js" time="50.516">
+<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC028 - Table has proper headers (Solution ID, Eng, SI Eng, Category, L1 Status, L2 Status, etc.)" classname="approveSolutionTeamSales.spec.js" time="69.674">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -944,7 +255,7 @@ Table headers: SOLUTION ID, SOLUTION ENG, SI ENG, SOLUTION CATEGORY, L1 STATUS (
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC029 - Table displays solution data correctly" classname="approveSolutionTeamSales.spec.js" time="29.592">
+<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC029 - Table displays solution data correctly" classname="approveSolutionTeamSales.spec.js" time="63.708">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -952,12 +263,12 @@ Selecting L1 View...
 ✅ L1 View selected
 Clicking View Sales button...
 ✅ View Sales clicked
-Table rows count: 17
-First row data: SOL-1001 | K.A.S. Kumara | N/A | Enterprise Solution | Pending | View Sales | Show
+Table rows count: 15
+First row data: SOL-1004 | S.K. De Silva | N/A | Enterprise Solution | Approved | View Sales | Show
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC030 - Can retrieve all solution IDs from table" classname="approveSolutionTeamSales.spec.js" time="57.329">
+<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC030 - Can retrieve all solution IDs from table" classname="approveSolutionTeamSales.spec.js" time="68.184">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -965,11 +276,11 @@ Selecting L1 View...
 ✅ L1 View selected
 Clicking View Sales button...
 ✅ View Sales clicked
-Solution IDs: SOL-1001, SOL-1002, SOL-1004, SOL-2001, SOL-2002, SOL-3001, SOL-3002, SOL-3003, SOL-3004, SOL-TEST-001, SOL-3005, SOL-4001, SOL-4002, SOL-4003, SOL-4004, SOL-4005, SOL-4006
+Solution IDs: SOL-1004, SOL-2001, SOL-2002, SOL-3001, SOL-3002, SOL-3003, SOL-3004, SOL-TEST-001, SOL-3005, SOL-4001, SOL-4002, SOL-4003, SOL-4004, SOL-4005, SOL-4006
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC031 - Table rows have consistent data structure" classname="approveSolutionTeamSales.spec.js" time="26.031">
+<testcase name="Approve Solution Team Sales Page Tests › Table and Solution Data Tests › TC031 - Table rows have consistent data structure" classname="approveSolutionTeamSales.spec.js" time="65.639">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -980,10 +291,13 @@ Clicking View Sales button...
 First row columns: 7
 Row 1 columns: 7
 Row 2 columns: 7
+Row 3 columns: 7
+Row 4 columns: 7
+✅ All rows have consistent column structure
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC032 - Show/Details buttons are visible in table rows" classname="approveSolutionTeamSales.spec.js" time="66.612">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC032 - Show/Details buttons are visible in table rows" classname="approveSolutionTeamSales.spec.js" time="46.307">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -991,37 +305,28 @@ Selecting L1 View...
 ✅ L1 View selected
 Clicking View Sales button...
 ✅ View Sales clicked
-Show/Details buttons count: 17
+Show/Details buttons count: 15
+✅ Show/Details buttons found
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC033 - Click Show button on first row displays details modal" classname="approveSolutionTeamSales.spec.js" time="138.332">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC033 - Click Show button on first row displays details modal" classname="approveSolutionTeamSales.spec.js" time="54.043">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-2e700--row-displays-details-modal-chromium\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-2e700--row-displays-details-modal-chromium\error-context.md]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 Selecting L1 View...
 ✅ L1 View selected
 Clicking View Sales button...
 ✅ View Sales clicked
-First row data: SOL-1001 | K.A.S. Kumara | N/A | Enterprise Solution | Pending | View Sales | Show
+First row data: SOL-1004 | S.K. De Silva | N/A | Enterprise Solution | Approved | View Sales | Show
 Clicking Show Details button on row 0...
 ✅ Clicked Show Details on row 0
 Show Details button clicked: true
 Detail modal visible: true
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-2e700--row-displays-details-modal-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC034 - Click Eye icon displays details modal" classname="approveSolutionTeamSales.spec.js" time="63.152">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC034 - Click Eye icon displays details modal" classname="approveSolutionTeamSales.spec.js" time="60.089">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1041,22 +346,22 @@ Call log:
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC035 - Detail modal shows solution information" classname="approveSolutionTeamSales.spec.js" time="158.593">
-<failure message="approveSolutionTeamSales.spec.js:584:5 TC035 - Detail modal shows solution information" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:584:5 › Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC035 - Detail modal shows solution information 
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC035 - Detail modal shows solution information" classname="approveSolutionTeamSales.spec.js" time="151.473">
+<failure message="approveSolutionTeamSales.spec.js:585:5 TC035 - Detail modal shows solution information" type="FAILURE">
+<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:585:5 › Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC035 - Detail modal shows solution information 
 
     Error: expect(received).toBeTruthy()
 
     Received: false
 
-      609 |       } catch (error) {
-      610 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 611 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
+      610 |       } catch (error) {
+      611 |         console.log(`⚠️  Test error: ${error.message}`);
+    > 612 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
           |                            ^
-      612 |       }
-      613 |     });
-      614 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:611:28
+      613 |       }
+      614 |     });
+      615 |
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:612:28
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\..\test-results\approveSolutionTeamSales-A-d867d--shows-solution-information-chromium\test-failed-1.png
@@ -1074,14 +379,14 @@ Call log:
 
     Received: false
 
-      609 |       } catch (error) {
-      610 |         console.log(`⚠️  Test error: ${error.message}`);
-    > 611 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
+      610 |       } catch (error) {
+      611 |         console.log(`⚠️  Test error: ${error.message}`);
+    > 612 |         expect.soft(false).toBeTruthy(); // Soft assertion: error was thrown
           |                            ^
-      612 |       }
-      613 |     });
-      614 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:611:28
+      613 |       }
+      614 |     });
+      615 |
+        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:612:28
 
     attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
     ..\..\test-results\approveSolutionTeamSales-A-d867d--shows-solution-information-chromium-retry1\test-failed-1.png
@@ -1150,7 +455,7 @@ Received: [31mnull[39m
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC036 - Can close detail modal by clicking close button" classname="approveSolutionTeamSales.spec.js" time="57.547">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC036 - Can close detail modal by clicking close button" classname="approveSolutionTeamSales.spec.js" time="51.936">
 <system-out>
 <![CDATA[✅ Connected to PostgreSQL database
 ✅ Database connection successful
@@ -1169,7 +474,7 @@ Modal still visible: false
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC037 - Can close detail modal by pressing Escape key" classname="approveSolutionTeamSales.spec.js" time="58.88">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC037 - Can close detail modal by pressing Escape key" classname="approveSolutionTeamSales.spec.js" time="62.848">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1183,7 +488,7 @@ Modal still visible after Escape: false
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC038 - Show Details button on different rows displays correct row data" classname="approveSolutionTeamSales.spec.js" time="49.418">
+<testcase name="Approve Solution Team Sales Page Tests › Show/Details Button Tests › TC038 - Show Details button on different rows displays correct row data" classname="approveSolutionTeamSales.spec.js" time="75.417">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1191,12 +496,12 @@ Selecting L1 View...
 ✅ L1 View selected
 Clicking View Sales button...
 ✅ View Sales clicked
-First row Solution ID: SOL-1001
+First row Solution ID: SOL-1004
 Clicking Show Details button on row 0...
 ✅ Clicked Show Details on row 0
 Closing detail modal...
 ✅ Detail modal closed
-Second row Solution ID: SOL-1002
+Second row Solution ID: SOL-2001
 Clicking Show Details button on row 1...
 ✅ Clicked Show Details on row 1
 Modal shows different content for row 2
@@ -1235,157 +540,32 @@ Modal shows different content for row 2
 <skipped>
 </skipped>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC043 - L1 View: Can see L1 Status column and can interact with approval actions" classname="approveSolutionTeamSales.spec.js" time="168.509">
-<failure message="approveSolutionTeamSales.spec.js:848:5 TC043 - L1 View: Can see L1 Status column and can interact with approval actions" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:848:5 › Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC043 - L1 View: Can see L1 Status column and can interact with approval actions 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC043 - L1 View: Can see L1 Status column and can interact with approval actions" classname="approveSolutionTeamSales.spec.js" time="59.035">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-33f5d-eract-with-approval-actions-chromium-retry1\trace.zip]]
+<![CDATA[Navigating to Approve Solution Team Sales page...
+✅ Page loaded
+Selecting L1 View...
+✅ L1 View selected
+Clicking View Sales button...
+✅ View Sales clicked
+L1 Status column visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC044 - L2 View: Can see L2 Status column and can interact with approval actions" classname="approveSolutionTeamSales.spec.js" time="158.733">
-<failure message="approveSolutionTeamSales.spec.js:866:5 TC044 - L2 View: Can see L2 Status column and can interact with approval actions" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:866:5 › Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC044 - L2 View: Can see L2 Status column and can interact with approval actions 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC044 - L2 View: Can see L2 Status column and can interact with approval actions" classname="approveSolutionTeamSales.spec.js" time="46.486">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
+<![CDATA[Navigating to Approve Solution Team Sales page...
+✅ Page loaded
+Selecting L2 View...
+✅ L2 View selected
+Clicking View Sales button...
+✅ View Sales clicked
+L2 Status column visible: true
 ✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-dae24-eract-with-approval-actions-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC045 - L3 View: Can see all data with read-only access (no edit/approve buttons)" classname="approveSolutionTeamSales.spec.js" time="74.208">
+<testcase name="Approve Solution Team Sales Page Tests › Role-Specific Behavior Tests › TC045 - L3 View: Can see all data with read-only access (no edit/approve buttons)" classname="approveSolutionTeamSales.spec.js" time="78.545">
 <system-out>
 <![CDATA[✅ Connected to PostgreSQL database
 ✅ Database connection successful
@@ -1399,7 +579,7 @@ L3 View - Table rows: 18
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Comprehensive Flow Tests › TC046 - Complete flow: Select view -&gt; Filter -&gt; View Sales -&gt; Show Details" classname="approveSolutionTeamSales.spec.js" time="65.873">
+<testcase name="Approve Solution Team Sales Page Tests › Comprehensive Flow Tests › TC046 - Complete flow: Select view -&gt; Filter -&gt; View Sales -&gt; Show Details" classname="approveSolutionTeamSales.spec.js" time="66.452">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1422,7 +602,7 @@ Detail modal visible: true
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Comprehensive Flow Tests › TC047 - View switching flow: Switch between L1, L2, and L3 views" classname="approveSolutionTeamSales.spec.js" time="70.231">
+<testcase name="Approve Solution Team Sales Page Tests › Comprehensive Flow Tests › TC047 - View switching flow: Switch between L1, L2, and L3 views" classname="approveSolutionTeamSales.spec.js" time="74.6">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1446,102 +626,9 @@ Available buttons: Apply Filters, View Sales, Show, View Sales, Show, View Sales
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › TC999 - Back button navigates to previous page" classname="approveSolutionTeamSales.spec.js" time="124.35">
-<failure message="approveSolutionTeamSales.spec.js:967:3 TC999 - Back button navigates to previous page" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:967:3 › Approve Solution Team Sales Page Tests › TC999 - Back button navigates to previous page 
-
-    Error: expect(received).toContain(expected) // indexOf
-
-    Expected substring: "approve-solution-team-sales"
-    Received string:    "about:blank"
-
-      991 |     
-      992 |     // Verify we're back at the approve sales page
-    > 993 |     expect(finalUrl).toContain('approve-solution-team-sales');
-          |                      ^
-      994 |     console.log(`   ✅ Back button navigated correctly`);
-      995 |   });
-      996 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:993:22
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    Error: expect(received).toContain(expected) // indexOf
-
-    Expected substring: "approve-solution-team-sales"
-    Received string:    "about:blank"
-
-      991 |     
-      992 |     // Verify we're back at the approve sales page
-    > 993 |     expect(finalUrl).toContain('approve-solution-team-sales');
-          |                      ^
-      994 |     console.log(`   ✅ Back button navigated correctly`);
-      995 |   });
-      996 |
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:993:22
-
-    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\test-failed-1.png
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › TC998 - Record count validation: DB records match UI display" classname="approveSolutionTeamSales.spec.js" time="58.984">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-
-📋 TEST TC999 - Back Button Navigation
-   Current URL: https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales
-   Navigated to: https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales
-   After back button: about:blank
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Page loaded
-
-📋 TEST TC999 - Back Button Navigation
-   Current URL: https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales
-   Navigated to: https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales
-   After back button: about:blank
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\test-failed-1.png]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ec62e--navigates-to-previous-page-chromium-retry1\trace.zip]]
-]]>
-</system-out>
-</testcase>
-<testcase name="Approve Solution Team Sales Page Tests › TC998 - Record count validation: DB records match UI display" classname="approveSolutionTeamSales.spec.js" time="63.895">
-<system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC998 - Record Count Validation
@@ -1557,10 +644,10 @@ Navigating to Approve Solution Team Sales page...
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC050 - Can open edit modal from Show button" classname="approveSolutionTeamSales.spec.js" time="35.123">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC050 - Can open edit modal from Show button" classname="approveSolutionTeamSales.spec.js" time="64.377">
 <system-out>
 <![CDATA[
-📋 EDIT TESTS SETUP: Test record ID=4, L1=Approved, L2=Approved
+📋 EDIT TESTS SETUP: Test record ID=3, L1=Approved, L2=Approved
 Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
@@ -1575,17 +662,9 @@ Closing detail modal...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC051 - Edit L1 Status field value" classname="approveSolutionTeamSales.spec.js" time="135.288">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC051 - Edit L1 Status field value" classname="approveSolutionTeamSales.spec.js" time="66.964">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-d2be3--Edit-L1-Status-field-value-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-
-📋 EDIT TESTS SETUP: Test record ID=4, L1=Approved, L2=Approved
-Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC051 - Edit L1 Status
@@ -1596,12 +675,10 @@ Clicking Show Details button on row 0...
 Clicking Edit button...
 ✅ Edit button clicked
    ⚠️ L1 Status dropdown not found
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-d2be3--Edit-L1-Status-field-value-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC052 - Edit L2 Status field value" classname="approveSolutionTeamSales.spec.js" time="58.066">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC052 - Edit L2 Status field value" classname="approveSolutionTeamSales.spec.js" time="50.551">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1617,7 +694,7 @@ Clicking Edit button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC053 - Edit comment/remarks field" classname="approveSolutionTeamSales.spec.js" time="57.605">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC053 - Edit comment/remarks field" classname="approveSolutionTeamSales.spec.js" time="49.843">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1633,7 +710,7 @@ Clicking Edit button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC054 - Save changes and verify modal closes" classname="approveSolutionTeamSales.spec.js" time="66.158">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC054 - Save changes and verify modal closes" classname="approveSolutionTeamSales.spec.js" time="48.221">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1648,22 +725,21 @@ Clicking Edit button...
 Clicking Save button...
 ✅ Save button clicked
    ✅ Changes saved successfully
-   ✅ Modal closed after save
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC055 - Verify database record updated correctly" classname="approveSolutionTeamSales.spec.js" time="45.775">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Basic Functionality › TC055 - Verify database record updated correctly" classname="approveSolutionTeamSales.spec.js" time="60.643">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC055 - Database Verification
-   DB Record: ID=4, L1=Approved, L2=Approved
+   DB Record: ID=3, L1=Approved, L2=Approved
    ✅ Database record retrieved and verified
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC056 - Validation: Required field cannot be empty" classname="approveSolutionTeamSales.spec.js" time="47.63">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC056 - Validation: Required field cannot be empty" classname="approveSolutionTeamSales.spec.js" time="41.412">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1680,7 +756,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC057 - Validation: Invalid status value rejection" classname="approveSolutionTeamSales.spec.js" time="58.968">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC057 - Validation: Invalid status value rejection" classname="approveSolutionTeamSales.spec.js" time="60.865">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1697,7 +773,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC058 - Validation: Comment text too long (boundary test)" classname="approveSolutionTeamSales.spec.js" time="48.254">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC058 - Validation: Comment text too long (boundary test)" classname="approveSolutionTeamSales.spec.js" time="60.765">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1714,7 +790,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC059 - Validation: Special characters in comment" classname="approveSolutionTeamSales.spec.js" time="38.253">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC059 - Validation: Special characters in comment" classname="approveSolutionTeamSales.spec.js" time="70.828">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1731,7 +807,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC060 - Negative: Cancel without saving preserves original data" classname="approveSolutionTeamSales.spec.js" time="39.953">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC060 - Negative: Cancel without saving preserves original data" classname="approveSolutionTeamSales.spec.js" time="67.291">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1746,175 +822,51 @@ Clicking Edit button...
 Clicking Cancel button...
 ✅ Cancel button clicked
    ✅ Original data preserved after cancel
-✅ Disconnected from database
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC061 - Negative: Edit with no changes then save" classname="approveSolutionTeamSales.spec.js" time="166.741">
-<failure message="approveSolutionTeamSales.spec.js:1527:5 TC061 - Negative: Edit with no changes then save" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:1527:5 › Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation & Negative › TC061 - Negative: Edit with no changes then save 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC061 - Negative: Edit with no changes then save" classname="approveSolutionTeamSales.spec.js" time="50.016">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
+<![CDATA[Navigating to Approve Solution Team Sales page...
+✅ Page loaded
 
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-ded69-t-with-no-changes-then-save-chromium-retry1\trace.zip]]
+📋 TEST TC061 - Save Without Changes
+Selecting L1 View...
+✅ L1 View selected
+Clicking Show Details button on row 0...
+✅ Clicked Show Details on row 0
+Clicking Edit button...
+✅ Edit button clicked
+Clicking Save button...
+✅ Save button clicked
+   ✅ No-change save handled gracefully
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC062 - Negative: Only changed fields update in database" classname="approveSolutionTeamSales.spec.js" time="155.434">
-<failure message="approveSolutionTeamSales.spec.js:1558:5 TC062 - Negative: Only changed fields update in database" type="FAILURE">
-<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:1558:5 › Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation & Negative › TC062 - Negative: Only changed fields update in database 
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
-
-    TimeoutError: page.goto: Timeout 60000ms exceeded.
-    Call log:
-      - navigating to "https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales", waiting until "domcontentloaded"
-
-
-       at ..\pages\approveSolutionTeamSalesPage.js:67
-
-      65 |   async goto() {
-      66 |     console.log('Navigating to Approve Solution Team Sales page...');
-    > 67 |     await this.page.goto('https://dpdlab1.slt.lk:8454/view-confirm-solution-team-sales', {
-         |                     ^
-      68 |       ignoreHTTPSErrors: true,
-      69 |       waitUntil: 'domcontentloaded',
-      70 |       timeout: parseInt(process.env.PLAYWRIGHT_TIMEOUT || '60000', 10)
-        at ApproveSolutionTeamSalesPage.goto (C:\Users\Protech\Desktop\ESIC-testing\tests\pages\approveSolutionTeamSalesPage.js:67:21)
-        at C:\Users\Protech\Desktop\ESIC-testing\tests\specs\approveSolutionTeamSales.spec.js:26:23
-
-    attachment #1: video (video/webm) ──────────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium-retry1\video.webm
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-
-    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
-    ..\..\test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium-retry1\trace.zip
-    Usage:
-
-        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium-retry1\trace.zip
-
-    ────────────────────────────────────────────────────────────────────────────────────────────────
-]]>
-</failure>
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC062 - Negative: Only changed fields update in database" classname="approveSolutionTeamSales.spec.js" time="24.508">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
+<![CDATA[Navigating to Approve Solution Team Sales page...
+✅ Page loaded
 
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium\video.webm]]
-✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium-retry1\video.webm]]
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-04c3f-d-fields-update-in-database-chromium-retry1\trace.zip]]
+📋 TEST TC062 - Partial Update Verification
+   Before: L1=Approved, L2=Approved, ENG=S.K. De Silva
+   ✅ Non-edited fields preserved
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC063 - Negative: Edit timestamp updated on save" classname="approveSolutionTeamSales.spec.js" time="40.166">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC063 - Negative: Edit timestamp updated on save" classname="approveSolutionTeamSales.spec.js" time="44.525">
 <system-out>
-<![CDATA[✅ Connected to PostgreSQL database
-✅ Database connection successful
-Navigating to Approve Solution Team Sales page...
+<![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC063 - Timestamp Verification
    Created: 2026-02-05T07:26:44.654Z
-   Updated: 2026-02-05T07:26:44.654Z
+   Updated: 2026-02-23T04:06:12.673Z
    ✅ Timestamp correctly maintained
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC064 - Negative: Invalid field combination detection" classname="approveSolutionTeamSales.spec.js" time="40.815">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC064 - Negative: Invalid field combination detection" classname="approveSolutionTeamSales.spec.js" time="23.246">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1929,30 +881,33 @@ Clicking Edit button...
    ℹ️ Cannot test invalid combination (insufficient fields)
 Clicking Cancel button...
 ✅ Cancel button clicked
+✅ Disconnected from database
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC065 - Database: Verify all fields persist correctly after edit" classname="approveSolutionTeamSales.spec.js" time="58.816">
+<testcase name="Approve Solution Team Sales Page Tests › Edit Operation Tests - Validation &amp; Negative › TC065 - Database: Verify all fields persist correctly after edit" classname="approveSolutionTeamSales.spec.js" time="75.333">
 <system-out>
-<![CDATA[Navigating to Approve Solution Team Sales page...
+<![CDATA[✅ Connected to PostgreSQL database
+✅ Database connection successful
+Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC065 - Complete Database Persistence
 
    📊 DATABASE RECORD VERIFICATION:
-   - ID: 4
+   - ID: 3
    - L1 Status: Approved
    - L2 Status: Approved
-   - Solution ENG: A.M. Fonceka
-   - SI ENG: A.M. Fonceka
-   - Category: SI Business Solution
+   - Solution ENG: S.K. De Silva
+   - SI ENG: N/A
+   - Category: Enterprise Solution
    - Created: 2026-02-05T07:26:44.654Z
-   - Updated: 2026-02-05T07:26:44.654Z
+   - Updated: 2026-02-23T04:06:12.673Z
    ✅ All database fields persisted correctly
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC066 - Data persists correctly after page reload" classname="approveSolutionTeamSales.spec.js" time="65.691">
+<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC066 - Data persists correctly after page reload" classname="approveSolutionTeamSales.spec.js" time="66.982">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1963,7 +918,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC067 - Database schema validation: Required columns exist" classname="approveSolutionTeamSales.spec.js" time="50.364">
+<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC067 - Database schema validation: Required columns exist" classname="approveSolutionTeamSales.spec.js" time="61.867">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1981,7 +936,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC068 - Data integrity: No NULL values in required fields" classname="approveSolutionTeamSales.spec.js" time="24.113">
+<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC068 - Data integrity: No NULL values in required fields" classname="approveSolutionTeamSales.spec.js" time="39.696">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -1997,7 +952,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC069 - UI data matches database for selected filters" classname="approveSolutionTeamSales.spec.js" time="62.779">
+<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC069 - UI data matches database for selected filters" classname="approveSolutionTeamSales.spec.js" time="38.591">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2008,25 +963,63 @@ Selecting L1 View...
 Year options: ALL, 2024, 2025, 2026
 Selecting year: ALL
 ✅ Selected year: ALL
-   UI rows retrieved: 17
+   UI rows retrieved: 15
    DB records for year ALL: 0
    UI rows match DB: ❌
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC070 - Edit operation persists to database with timestamp" classname="approveSolutionTeamSales.spec.js" time="24.596">
+<testcase name="Approve Solution Team Sales Page Tests › Data Persistence &amp; Database Validation › TC070 - Edit operation persists to database with timestamp" classname="approveSolutionTeamSales.spec.js" time="59.064">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
 
 📋 TEST TC070 - Edit Persistence with Timestamp
-   Record ID: 4
-   Original updated_at: Thu Feb 05 2026 12:56:44 GMT+0530 (India Standard Time)
+   Record ID: 3
+   Original updated_at: Mon Feb 23 2026 09:36:12 GMT+0530 (India Standard Time)
    ✅ Database records maintain update timestamps
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC071 - Handles empty dataset gracefully" classname="approveSolutionTeamSales.spec.js" time="90.064">
+<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC071 - Handles empty dataset gracefully" classname="approveSolutionTeamSales.spec.js" time="187.204">
+<failure message="approveSolutionTeamSales.spec.js:1864:5 TC071 - Handles empty dataset gracefully" type="FAILURE">
+<![CDATA[  [chromium] › approveSolutionTeamSales.spec.js:1864:5 › Approve Solution Team Sales Page Tests › Error Handling & Validation › TC071 - Handles empty dataset gracefully 
+
+    Test timeout of 90000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\error-context.md
+
+    Retry #1 ───────────────────────────────────────────────────────────────────────────────────────
+
+    Test timeout of 90000ms exceeded.
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\error-context.md
+
+    attachment #4: trace (application/zip) ─────────────────────────────────────────────────────────
+    ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\trace.zip
+    Usage:
+
+        npx playwright show-trace ..\..\test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2037,8 +1030,35 @@ Selecting L1 View...
 Year options: ALL, 2024, 2025, 2026
 Selecting year: 2099
 Clicking View Sales button...
-   Rows with empty filter: 17
-   ✅ Empty dataset handled without errors
+   ⚠️ Error: page.waitForTimeout: Target page, context or browser has been closed
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\video.webm]]
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium\error-context.md]]
+✅ Connected to PostgreSQL database
+✅ Database connection successful
+Navigating to Approve Solution Team Sales page...
+✅ Page loaded
+
+📋 TEST TC071 - Empty Dataset Handling
+Selecting L1 View...
+✅ L1 View selected
+Year options: ALL, 2024, 2025, 2026
+Selecting year: 2099
+Clicking View Sales button...
+   ⚠️ Error: page.waitForTimeout: Target page, context or browser has been closed
+✅ Disconnected from database
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\test-failed-1.png]]
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\video.webm]]
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\error-context.md]]
+
+[[ATTACHMENT|test-results\approveSolutionTeamSales-A-f5013-es-empty-dataset-gracefully-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 <system-err>
@@ -2065,7 +1085,7 @@ Call log:
 [2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
 [2m    - retrying click action[22m
 [2m      - waiting 100ms[22m
-[2m    17 × waiting for element to be visible, enabled and stable[22m
+[2m    18 × waiting for element to be visible, enabled and stable[22m
 [2m       - element is visible, enabled and stable[22m
 [2m       - scrolling into view if needed[22m
 [2m       - done scrolling[22m
@@ -2100,10 +1120,44 @@ Call log:
 [2m     - retrying click action[22m
 [2m       - waiting 500ms[22m
 
-Error clicking View Sales: locator.click: Timeout 10000ms exceeded.
+Error clicking View Sales: locator.click: Test timeout of 90000ms exceeded.
 Call log:
 [2m  - waiting for locator('div:has-text("Filter By"), .filter-section').first().locator('button:has-text("View Sales"), button:has-text("View"), button:has-text("Submit")').first()[22m
-[2m    - locator resolved to <button tabindex="0" type="button" class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary sc-uhYvK AZsQX css-e4ujeq">View Sales</button>[22m
+[2m    - locator resolved to <button tabindex="0" type="button" class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary sc-kZZPWb esugfo css-e4ujeq">View Sales</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    9 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+
+Error selecting year: locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for getByRole('option', { name: /2099/i })[22m
+
+Alternative year selection also failed: locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('select, .MuiSelect-root, [role="combobox"]').first()[22m
+[2m    - locator resolved to <div class="MuiInputBase-root MuiOutlinedInput-root MuiInputBase-colorPrimary Mui-focused MuiInputBase-formControl MuiInputBase-sizeSmall MuiSelect-root css-zt2b1k">…</div>[22m
 [2m  - attempting click action[22m
 [2m    2 × waiting for element to be visible, enabled and stable[22m
 [2m      - element is visible, enabled and stable[22m
@@ -2127,16 +1181,69 @@ Call log:
 [2m     - retrying click action[22m
 [2m       - waiting 500ms[22m
 
+Error getting quarter options: locator.click: Timeout 10000ms exceeded.
+Call log:
+[2m  - waiting for locator('select, .MuiSelect-root, [role="combobox"]').nth(1)[22m
+[2m    - locator resolved to <div tabindex="0" role="combobox" aria-expanded="true" aria-controls="_r_p_" aria-haspopup="listbox" class="MuiSelect-select MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input MuiInputBase-inputSizeSmall css-uxvpzc">ALL</div>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    18 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+
+Error clicking View Sales: locator.click: Test timeout of 90000ms exceeded.
+Call log:
+[2m  - waiting for locator('div:has-text("Filter By"), .filter-section').first().locator('button:has-text("View Sales"), button:has-text("View"), button:has-text("Submit")').first()[22m
+[2m    - locator resolved to <button tabindex="0" type="button" class="MuiButtonBase-root MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium MuiButton-containedSizeMedium MuiButton-colorPrimary sc-kZZPWb esugfo css-e4ujeq">View Sales</button>[22m
+[2m  - attempting click action[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m    - waiting 20ms[22m
+[2m    2 × waiting for element to be visible, enabled and stable[22m
+[2m      - element is visible, enabled and stable[22m
+[2m      - scrolling into view if needed[22m
+[2m      - done scrolling[22m
+[2m      - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m    - retrying click action[22m
+[2m      - waiting 100ms[22m
+[2m    16 × waiting for element to be visible, enabled and stable[22m
+[2m       - element is visible, enabled and stable[22m
+[2m       - scrolling into view if needed[22m
+[2m       - done scrolling[22m
+[2m       - <div aria-hidden="true" class="MuiBackdrop-root MuiBackdrop-invisible MuiModal-backdrop css-1lbe2ow"></div> from <div id="menu-" role="presentation" class="MuiPopover-root MuiMenu-root MuiModal-root css-749mnm">…</div> subtree intercepts pointer events[22m
+[2m     - retrying click action[22m
+[2m       - waiting 500ms[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+[2m    - element is visible, enabled and stable[22m
+[2m    - scrolling into view if needed[22m
+
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC072 - Network error recovery: Page remains usable" classname="approveSolutionTeamSales.spec.js" time="138.445">
+<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC072 - Network error recovery: Page remains usable" classname="approveSolutionTeamSales.spec.js" time="42.149">
 <system-out>
-<![CDATA[Navigating to Approve Solution Team Sales page...
-✅ Disconnected from database
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-52421-ecovery-Page-remains-usable-chromium\video.webm]]
-✅ Connected to PostgreSQL database
+<![CDATA[✅ Connected to PostgreSQL database
 ✅ Database connection successful
 Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2147,12 +1254,10 @@ Navigating to Approve Solution Team Sales page...
    ⚠️ Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
 
 Received: [31mnull[39m
-
-[[ATTACHMENT|test-results\approveSolutionTeamSales-A-52421-ecovery-Page-remains-usable-chromium-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC073 - Invalid dropdown selection handling" classname="approveSolutionTeamSales.spec.js" time="72.22">
+<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC073 - Invalid dropdown selection handling" classname="approveSolutionTeamSales.spec.js" time="54.425">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2199,7 +1304,7 @@ Call log:
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC074 - Modal close during data load" classname="approveSolutionTeamSales.spec.js" time="42.859">
+<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC074 - Modal close during data load" classname="approveSolutionTeamSales.spec.js" time="48.365">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2214,7 +1319,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC075 - Handles missing/malformed data in database" classname="approveSolutionTeamSales.spec.js" time="61.544">
+<testcase name="Approve Solution Team Sales Page Tests › Error Handling &amp; Validation › TC075 - Handles missing/malformed data in database" classname="approveSolutionTeamSales.spec.js" time="26.813">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2224,7 +1329,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC076 - Cannot approve with incomplete role selection" classname="approveSolutionTeamSales.spec.js" time="39.652">
+<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC076 - Cannot approve with incomplete role selection" classname="approveSolutionTeamSales.spec.js" time="60.468">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2236,7 +1341,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC077 - Editing non-existent record returns error" classname="approveSolutionTeamSales.spec.js" time="51.8">
+<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC077 - Editing non-existent record returns error" classname="approveSolutionTeamSales.spec.js" time="61.356">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2246,7 +1351,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC078 - Cannot save with invalid status values" classname="approveSolutionTeamSales.spec.js" time="38.661">
+<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC078 - Cannot save with invalid status values" classname="approveSolutionTeamSales.spec.js" time="37.024">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2263,7 +1368,7 @@ Clicking Cancel button...
 ]]>
 </system-out>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC079 - Rapid successive actions handled correctly" classname="approveSolutionTeamSales.spec.js" time="49.414">
+<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC079 - Rapid successive actions handled correctly" classname="approveSolutionTeamSales.spec.js" time="51.75">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
@@ -2285,7 +1390,7 @@ Available buttons: Apply Filters, View Sales, Show, View Sales, Show, View Sales
 ]]>
 </system-err>
 </testcase>
-<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC080 - Concurrent filter changes handled gracefully" classname="approveSolutionTeamSales.spec.js" time="46.682">
+<testcase name="Approve Solution Team Sales Page Tests › Error Scenarios &amp; Negative Testing › TC080 - Concurrent filter changes handled gracefully" classname="approveSolutionTeamSales.spec.js" time="61.701">
 <system-out>
 <![CDATA[Navigating to Approve Solution Team Sales page...
 ✅ Page loaded
