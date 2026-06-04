@@ -1,0 +1,26 @@
+{
+  "name": "enterprise-sales-incentive-project-automation-",
+  "version": "1.0.0",
+  "description": "Automating Enterprise Insentive",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Chanuthi02/Enterprise-Sales-Incentive-Project-Automation-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Chanuthi02/Enterprise-Sales-Incentive-Project-Automation-/issues"
+  },
+  "homepage": "https://github.com/Chanuthi02/Enterprise-Sales-Incentive-Project-Automation-#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.5.0"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "pg": "^8.20.0"
+  }
+}
